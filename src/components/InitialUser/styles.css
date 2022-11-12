@@ -1,0 +1,62 @@
+.initial-c {
+  background-color: #040405;
+  height: 550px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 60px;
+  padding-top: 60px;
+}
+
+.initial-c span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.initial-c h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #047c3f;
+}
+
+.initial-c h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.initial-c p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #d1d1d1;
+  margin-top: 30px;
+  max-width: 900px;
+  width: 100%;
+  margin-bottom: 30px;
+  line-height: 22px;
+}
+
+.initial-c button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #d1d1d1;
+  height: 50px;
+  width: 200px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: solid 1px #d1d1d1;
+  background-color: #040405;
+}
+
+.initial-c button:hover {
+  background-color: #047c3f;
+  border: none;
+}
