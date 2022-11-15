@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 //desensolver site {
 //responsivo
 //efeitos
-//Ancora
+//Ancora [OK]
 //}
 
 //componentiza [OK]
