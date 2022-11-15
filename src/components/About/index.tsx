@@ -1,13 +1,10 @@
-import React from "react"; 
 import "./styles.css"
 import user from "../../assets/icon.png";
 
 
-// import { Container } from './styles';
-
-const About: React.FC = () => {
+const About = () => {
   return (
-    <div className="about-c">
+    <div className="about-c" id="quem-sou">
       <div className="img-user">
         <img src={user} alt={user} />
       </div>

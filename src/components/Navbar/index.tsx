@@ -9,11 +9,21 @@ const Navbar = () => {
           <p>Gabriel Souza</p>
         </div>
         <ul>
-          <li>Ínicio</li>
-          <li>Quem Sou</li>
-          <li>Projetos</li>
-          <li>Serviços</li>
-          <li>Conhecimentos</li>
+          <li>
+            <a href="#inicio">Ínicio</a>
+          </li>
+          <li>
+            <a href="#quem-sou">Quem sou</a>
+          </li>
+          <li>
+            <a href="#projetos">Projetos</a>
+          </li>
+          <li>
+            <a href="#servicos">Serviços</a>
+          </li>
+          <li>
+            <a href="#conhecimentos">Conhecimentos</a>
+          </li>
         </ul>
       </nav>
     </div>

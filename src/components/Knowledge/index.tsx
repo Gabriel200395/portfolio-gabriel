@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar"; 
-import "./styles.css"
-
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import "./styles.css";
 
 type props = {
   valueEnd: number;
@@ -28,7 +27,7 @@ const ProgressProvider = ({ valueEnd, children }: props) => {
 
 const Knowledge = () => {
   return (
-    <div className="knowledge-c">
+    <div className="knowledge-c" id="conhecimentos">
       <h2>Conhecimentos</h2>
       <div className="grid-skills">
         <div className="card-skill">

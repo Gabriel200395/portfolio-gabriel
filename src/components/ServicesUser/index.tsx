@@ -1,8 +1,8 @@
-import "./styles.css"
+import "./styles.css";
 
 const ServicesUser = () => {
   return (
-    <div className="services-c">
+    <div className="services-c" id="servicos">
       <h2>
         Serviços <span>.</span>
       </h2>

@@ -1,10 +1,9 @@
 import "./styles.css";
+
 const ProjectUser = () => {
   return (
-    <div className="project-c">
-      <h2>
-        Projetos <span>.</span>
-      </h2>
+    <div className="project-c" id="projetos">
+      <h2>Projetos</h2>
       <div className="project-grid-container">
         <div className="card">
           <h3>Pokedex</h3>

@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 
 //desensolver site {
 //responsivo
-//efeitos 
+//efeitos
 //Ancora
 //}
 
@@ -23,10 +23,10 @@ function App() {
       <Navbar />
       <InitialUser />
       <About />
-      <Experience />
+      <Experience  />
       <ProjectUser />
       <ServicesUser />
-      <Knowledge />
+      <Knowledge  />
       <Footer />
     </>
   );

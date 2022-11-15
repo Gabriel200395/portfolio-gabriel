@@ -2,7 +2,7 @@ import "./styles.css";
 
 const Experience = () => {
   return (
-    <div className="experience-c">
+    <div className="experience-c" >
       <div className="experience-container-grid-main">
         <div>
           <h2>
