@@ -1,11 +1,10 @@
-import "./styles.css"
+import Animate from "@charlesvien/react-animatecss";
 
-
+import "./styles.css";
 
 const InitialUser = () => {
   return (
-    <div>
-      <div className="initial-c" id="inicio">
+    <div className="initial-c" id="inicio">
       <div>
         <span>Olá, eu sou</span>
         <h1>Gabriel Souza</h1>
@@ -18,7 +17,6 @@ const InitialUser = () => {
         centradas em Javascript, com foco em ReactJS e NodeJS e React Native.
       </p>
       <button>Contato</button>
-    </div>
     </div>
   );
 };

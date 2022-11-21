@@ -1,14 +1,43 @@
 .header {
   position: fixed;
   width: 100%;
+  background-color: #040405;
+}
+
+.header li a {
+  color: #d1d1d1;
+}
+
+.header p {
+  color: #fff;
+}
+
+.header .logo h3{
+  color: #047c3f;
+}
+
+.scroll-active-header {
+  background-color: #fff;
+}
+
+.scroll-active-header li a {
+  color: #040405;
+  font-weight: 600;
+}
+
+.scroll-active-header p {
+  color: #1e1616;
+}
+
+.scroll-active-header .logo h3{
+  color: #040405;
 }
 
 .nav-c {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
-  background-color: #040405;
+  height: 80px;
   padding-left: 60px;
   padding-right: 30px;
   border-bottom: solid 0.2px #1e1616;
@@ -18,7 +47,6 @@
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: 700;
-  color: #047c3f;
 }
 
 .nav-c .logo {
@@ -30,7 +58,6 @@
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 700;
-  color: #fff;
   margin-left: 10px;
 }
 
@@ -44,7 +71,6 @@
 
 .nav-c li a {
   margin: 0px 15px;
-  color: #d1d1d1;
   cursor: pointer;
   text-decoration: none;
 }
