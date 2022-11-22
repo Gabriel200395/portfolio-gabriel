@@ -6,6 +6,18 @@ type propsExperienceData = {
     titulo: string;
   };
 };
+type propertyProjects = {
+  titulo: string;
+  text: string;
+  buttonText: string;
+};
+
+type instanceProjects = {
+  [key: string]: {
+    arrProjects: propertyProjects[];
+  };
+};
+
 
 export const experienceObj: propsExperienceData = {
   Gnsystems: {
@@ -27,3 +39,60 @@ export const experienceObj: propsExperienceData = {
     titulo: "Athan",
   },
 };
+
+export const projectsCard: instanceProjects = {
+  page1: {
+    arrProjects: [
+      {
+        titulo: "Pokedex",
+        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
+        buttonText: "Vizualizar Projeto",
+      },
+      {
+        titulo: "Pokedex1",
+        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
+        buttonText: "Vizualizar Projeto",
+      },
+      {
+        titulo: "Pokede0",
+        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
+        buttonText: "Vizualizar Projeto",
+      },
+    ],
+  },
+  page2: {
+    arrProjects: [
+      {
+        titulo: "Pokedex",
+        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
+        buttonText: "Vizualizar Projeto",
+      },
+      {
+        titulo: "Pokedex1",
+        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
+        buttonText: "Vizualizar Projeto",
+      },
+      {
+        titulo: "Pokede0",
+        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
+        buttonText: "Vizualizar Projeto",
+      },
+      {
+        titulo: "Pokedex",
+        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
+        buttonText: "Vizualizar Projeto",
+      },
+      {
+        titulo: "Pokedex1",
+        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
+        buttonText: "Vizualizar Projeto",
+      },
+      {
+        titulo: "Pokede0",
+        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
+        buttonText: "Vizualizar Projeto",
+      },
+    ],
+  },
+};
+

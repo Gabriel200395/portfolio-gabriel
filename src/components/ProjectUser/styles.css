@@ -1,74 +1,92 @@
 .project-c {
-    background-color: #09090b;
-    height: 500px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .project-c .project-grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    grid-auto-rows: 300px;
-    max-width: 1000px;
-    width: 100%;
-    grid-gap: 15px;
-  }
-  
-  .project-c .project-grid-container .card {
-    background-color: #040405;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 2px 2px 2px 2px;
-  }
-  .project-c .project-grid-container .card:hover {
-    border: solid 1px #047c3f;
-  }
-  
-  .project-c .project-grid-container .card h3 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    color: #d1d1d1;
-    margin-bottom: 40px;
-  }
-  
-  .project-c .project-grid-container .card p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #d1d1d1;
-    margin-bottom: 40px;
-    width: 250px;
-  }
-  
-  .project-c .project-grid-container .card button {
-    font-family: "Montserrat", sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    color: #fff;
-    background-color: #047c3f;
-    width: 200px;
-    outline: none;
-    border: none;
-    height: 40px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  .project-c h2 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 35px;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 50px;
-  }
-  
-  .project-c span {
-    color: #047c3f;
-  }
+  background-color: #09090b;
+  height: 100%;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-c .project-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-auto-rows: 300px;
+  max-width: 1000px;
+  width: 100%;
+  grid-gap: 15px;
+  margin-bottom: 20px;
+}
+
+.project-c .project-grid-container .card {
+  background-color: #040405;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px 2px;
+}
+
+
+.project-c .project-grid-container .card h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #d1d1d1;
+  margin-bottom: 40px;
+}
+
+.project-c .project-grid-container .card p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #d1d1d1;
+  margin-bottom: 40px;
+  width: 250px;
+}
+
+.project-c .project-grid-container .card button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #047c3f;
+  width: 200px;
+  outline: none;
+  border: none;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.project-c h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.project-c span {
+  color: #047c3f;
+}
+
+.project-c .button-view-more{
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #d1d1d1;
+  width: 200px;
+  outline: none;
+  border: none;
+  height: 45px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 60px; 
+  background-color: #09090b;
+  border: solid 1px #d1d1d1;
+}
