@@ -3,6 +3,11 @@ type instanceSkill = {
   value: number;
 };
 
+type instanceButtonActive = {
+  text: string;
+  active: string;
+};
+
 export const skills: instanceSkill[] = [
   {
     name: "HTML",
@@ -51,5 +56,20 @@ export const skills: instanceSkill[] = [
   {
     name: "GitHub",
     value: 40,
+  },
+];
+
+export const buttonsActive: instanceButtonActive[] = [
+  {
+    text: "Gnsystems",
+    active: "btn-1",
+  },
+  {
+    text: "Intellectx",
+    active: "btn-2",
+  },
+  {
+    text: "Athan",
+    active: "btn-3",
   },
 ];
