@@ -6,7 +6,7 @@ import ProjectUser from "../components/ProjectUser";
 import ServicesUser from "../components/ServicesUser";
 import Knowledge from "../components/Knowledge";
 import Footer from "../components/Footer";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 //desensolver site {
 //responsivo
@@ -17,18 +17,26 @@ import { useEffect } from "react";
 //refatorar codigo
 //teste unitarios
 
+interface propsSkills {
+  name: string;
+  valueEnd: number;
+}
+
 function App() {
+  const [scrollEvent, setScrollEvent] = useState<boolean>(false);
+
   const body = document.querySelector("#root") as HTMLElement;
   useEffect(() => {
     window.addEventListener("scroll", () => {
       let header = window.document.querySelector(".header") as HTMLElement;
-      if (body.getBoundingClientRect().top < 0) {
-        header.classList.add("scroll-active-header");
-      } else {
-        header.classList.remove("scroll-active-header");
-      }
+
+      header.classList.toggle(
+        "scroll-active-header",
+        body.getBoundingClientRect().top < 0
+      );
     });
-  }, []);
+  }, [body]);
+
   return (
     <>
       <Navbar />

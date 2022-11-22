@@ -1,29 +1,5 @@
-import { useEffect, useState } from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "./styles.css";
-
-type props = {
-  valueEnd: number;
-  children: (value: number) => JSX.Element;
-};
-
-const ProgressProvider = ({ valueEnd, children }: props) => {
-  const [value, setValue] = useState(0);
-
-  useEffect(() => {
-    setInterval(() => {
-      setValue((c) => c + 10);
-    }, 1000);
-  }, []);
-
-  useEffect(() => {
-    if (value > valueEnd) {
-      return setValue(valueEnd);
-    }
-  }, [value]);
-
-  return children(value);
-};
 
 const Knowledge = () => {
   return (
@@ -33,37 +9,29 @@ const Knowledge = () => {
         <div className="card-skill">
           <h3>HTML</h3>
           <div className="progress">
-            <ProgressProvider valueEnd={100}>
-              {(value) => (
-                <CircularProgressbar
-                  value={value}
-                  text={`${value}%`}
-                  styles={buildStyles({
-                    textColor: "#d1d1d1",
-                    pathColor: "#047c3f",
-                    trailColor: "#fff",
-                  })}
-                />
-              )}
-            </ProgressProvider>
+            <CircularProgressbar
+              value={100}
+              text={`${100}%`}
+              styles={buildStyles({
+                textColor: "#d1d1d1",
+                pathColor: "#047c3f",
+                trailColor: "#fff",
+              })}
+            />
           </div>
         </div>
         <div className="card-skill">
           <h3>Css</h3>
           <div className="progress">
-            <ProgressProvider valueEnd={80}>
-              {(value) => (
-                <CircularProgressbar
-                  value={value}
-                  text={`${value}%`}
-                  styles={buildStyles({
-                    textColor: "#d1d1d1",
-                    pathColor: "#047c3f",
-                    trailColor: "#fff",
-                  })}
-                />
-              )}
-            </ProgressProvider>
+            <CircularProgressbar
+              value={80}
+              text={`${80}%`}
+              styles={buildStyles({
+                textColor: "#d1d1d1",
+                pathColor: "#047c3f",
+                trailColor: "#fff",
+              })}
+            />
           </div>
         </div>
         <div className="card-skill">
