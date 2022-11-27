@@ -1,16 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./styles.css";
 import { projectsCard } from "../../helpers/obj";
 
 const ProjectUser = () => {
   const [eventClickProject, setEventClickProject] = useState(1);
 
+  const scrollBody = (topScroll: number) =>
+    window.scroll({ top: topScroll, left: 0, behavior: "smooth" });
+
   const handleClickProjectPrev = () => {
     setEventClickProject((c) => c - 1);
+    scrollBody(1550);
   };
 
   const handleClickProjectNext = () => {
     setEventClickProject((c) => c + 1);
+    scrollBody(1950);
   };
 
   return (
@@ -18,18 +23,20 @@ const ProjectUser = () => {
       <h2>Projetos</h2>
       <>
         <div className="project-grid-container">
-          {projectsCard["page" + eventClickProject].arrProjects.map(() => {
-            return (
-              <div className="card">
-                <h3>Pokedex</h3>
-                <p>
-                  Site institucional de banco digital moderno, feito em HTML,
-                  Sass e JavaScript.
-                </p>
-                <button>Vizualizar Projeto</button>
-              </div>
-            );
-          })}
+          {projectsCard["page" + eventClickProject].arrProjects.map(
+            (_, index) => {
+              return (
+                <div className="card" key={index}>
+                  <h3>Pokedex</h3>
+                  <p>
+                    Site institucional de banco digital moderno, feito em HTML,
+                    Sass e JavaScript.
+                  </p>
+                  <button>Vizualizar Projeto</button>
+                </div>
+              );
+            }
+          )}
         </div>
 
         <button
@@ -39,15 +46,9 @@ const ProjectUser = () => {
               ? handleClickProjectPrev
               : handleClickProjectNext
           }
-          disabled={
-            projectsCard["page" + eventClickProject].arrProjects.length
-              ? false
-              : true
-          }
+          disabled={projectsCard["page" + eventClickProject] ? false : true}
         >
-          {projectsCard["page" + eventClickProject] === projectsCard["page1"]
-            ? "Ver Mais"
-            : "Voltar"}
+          {eventClickProject === 1 ? "Ver Mais" : "Voltar"}
         </button>
       </>
     </div>
