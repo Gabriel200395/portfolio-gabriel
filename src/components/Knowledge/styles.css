@@ -1,52 +1,59 @@
 .knowledge-c {
-    background-color: #09090b;
-    height: 820px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
+  background-color: #09090b;
+  height: 820px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.knowledge-c .grid-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  grid-auto-rows: 120px;
+  max-width: 1000px;
+  width: 100%;
+  grid-gap: 20px;
+}
+
+.knowledge-c h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.knowledge-c .card-skill h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #d1d1d1;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.knowledge-c .card-skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.progress {
+  width: 80px;
+  height: 80px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .knowledge-c{
+    height: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
-  
-  .knowledge-c .grid-skills {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-    grid-auto-rows: 120px;
-    max-width: 1000px;
-    width: 100%;
-    grid-gap: 20px;
-  }
-  
-  .knowledge-c h2 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 35px;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 50px;
-  }
-  
-  .knowledge-c .card-skill h3 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-    color: #d1d1d1;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-  }
-  
-  .knowledge-c .card-skill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .progress {
-    width: 80px;
-    height: 80px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-  }
-  
+}

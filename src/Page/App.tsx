@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 import { useEffect, useState } from "react";
 
 //desensolver site {
-//responsivo
+//responsivo[OK]
 //Ancora [OK]
 //}
 

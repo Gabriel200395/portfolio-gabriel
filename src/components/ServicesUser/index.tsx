@@ -29,17 +29,7 @@ const ServicesUser = () => {
             JavaScript.
           </p>
         </div>
-        <div className="card">
-          <div className="container-icon">
-            <i className="fas fa-mobile-alt" />
-          </div>
-
-          <h3>Mobile</h3>
-          <p>
-            Site institucional de banco digital moderno, feito em HTML, Sass e
-            JavaScript.
-          </p>
-        </div>
+        
       </div>
     </div>
   );

@@ -1,125 +1,182 @@
 .experience-c {
-    background-color: #040405;
-    height: 500px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .experience-c .experience-container-grid-main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .experience-c .experience-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 250px;
-    width: 100%;
-    margin-right: 50px;
+  background-color: #040405;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.experience-c .experience-container-grid-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.experience-c .experience-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 250px;
+  width: 100%;
+  margin-right: 50px;
+}
+.experience-c .experience-container-grid-main-data {
+  display: flex;
+}
+
+.experience-c .experience-container-grid-main h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.experience-c .experience-container .button-active {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #09090b;
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 70px;
+  text-align: left;
+  padding-left: 20px;
+  border-left: solid 5px #047c3f;
+  cursor: pointer;
+}
+
+.experience-c .experience-container .button-default {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #09090b;
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 70px;
+  text-align: left;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.experience-c .experience-container-grid-main span {
+  color: #047c3f;
+}
+
+.experience-c .experience-companies {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.experience-c .experience-data {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  width: 100%;
+}
+
+.experience-c .experience-data p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #d1d1d1;
+}
+
+.experience-c .experience-data .experience-data-container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.experience-c
+  .experience-data
+  .experience-data-header
+  .experience-data-container-header
+  h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #d1d1d1;
+}
+
+.experience-c
+  .experience-data
+  .experience-data-header
+  .experience-data-container-header
+  h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #d1d1d1;
+}
+
+.experience-c .experience-data .experience-data-header h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #d1d1d1;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .experience-c {
+    height: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .experience-c .experience-container-grid-main-data {
-    display: flex;
+    flex-direction: column;
   }
-  
-  .experience-c .experience-container-grid-main h2 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 35px;
-    font-weight: 600;
-    color: #fff;
-    margin-bottom: 30px;
-  }
-  
-  .experience-c .experience-container .button-active {
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
-    background-color: #09090b;
-    width: 100%;
-    outline: none;
-    border: none;
-    height: 70px;
-    text-align: left;
-    padding-left: 20px;
-    border-left: solid 5px #047c3f;
-    cursor: pointer;
-  }
-  
-  .experience-c .experience-container .button-default {
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
-    background-color: #09090b;
-    width: 100%;
-    outline: none;
-    border: none;
-    height: 70px;
-    text-align: left;
-    padding-left: 20px;
-    cursor: pointer;
-  }
-  
-  .experience-c .experience-container-grid-main span {
-    color: #047c3f;
-  }
-  
+
   .experience-c .experience-companies {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .experience-c .experience-data {
-    display: flex;
-    flex-direction: column;
-    max-width: 900px;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
-  }
-  
-  .experience-c .experience-data p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #d1d1d1;
-  }
-  
-  .experience-c .experience-data .experience-data-container-header {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
   }
-  
+  .experience-container-grid-main h2 {
+    text-align: center;
+  }
+
+  .experience-c .experience-container {
+    max-width: none;
+    margin-bottom: 40px;
+  }
+
+  .experience-data-header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .experience-c
     .experience-data
     .experience-data-header
     .experience-data-container-header
     h3 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: #d1d1d1;
+    font-size: 14px;
   }
-  
+
   .experience-c
     .experience-data
     .experience-data-header
     .experience-data-container-header
     h4 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #d1d1d1;
+    font-size: 13px;
   }
-  
-  .experience-c .experience-data .experience-data-header h5 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #d1d1d1;
+
+  .experience-c .experience-data .experience-data-container-header {
+    height: 50px;
     margin-bottom: 20px;
   }
+
+  .experience-c .experience-data p {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}

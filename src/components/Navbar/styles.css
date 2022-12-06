@@ -79,3 +79,15 @@
   color: #047c3f;
   font-weight: bold;
 }
+
+
+@media(max-width: 768px){
+  .nav-c {
+    flex-direction: column;
+  }   
+
+  .nav-c ul {
+    display: none;
+  }
+  
+}
