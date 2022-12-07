@@ -29,11 +29,16 @@ function App() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       let header = window.document.querySelector(".header") as HTMLElement;
-
+      let menu = window.document.querySelector(".dropdown") as HTMLElement;
+ 
       header.classList.toggle(
         "scroll-active-header",
         body.getBoundingClientRect().top < 0
       );
+       menu.classList.toggle(
+        "scroll-active-menu-header",
+        body.getBoundingClientRect().top < 0
+      ); 
     });
   }, [body]);
 

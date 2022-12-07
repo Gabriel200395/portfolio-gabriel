@@ -51,9 +51,9 @@
 }
 
 @media (max-width: 768px) {
-  .knowledge-c{
+  .knowledge-c {
     height: 100%;
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 60px;
   }
 }
