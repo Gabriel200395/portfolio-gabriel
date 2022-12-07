@@ -1,10 +1,11 @@
 import { useState } from "react";
+import { listItemNav } from "../../helpers/arrays";
 import "./styles.css";
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
 
-  const handleClickDropdown = () => setDropdown((state) => !state);
+  const handleClickOpenMenu = () => setDropdown((state) => !state);
   const handleClickCloseMenu = () => setDropdown(false);
 
   return (
@@ -15,46 +16,30 @@ const Navbar = () => {
           <p>Gabriel Souza</p>
         </div>
         <ul>
-          <li>
-            <a href="#inicio">Ínicio</a>
-          </li>
-          <li>
-            <a href="#quem-sou">Quem sou</a>
-          </li>
-          <li>
-            <a href="#projetos">Projetos</a>
-          </li>
-          <li>
-            <a href="#servicos">Serviços</a>
-          </li>
-          <li>
-            <a href="#conhecimentos">Conhecimentos</a>
-          </li>
+          {listItemNav.map((menuItem, index) => {
+            return (
+              <li key={index}>
+                <a href={menuItem.href}>{menuItem.text}</a>
+              </li>
+            );
+          })}
         </ul>
 
         <div className="dropdown">
-          <button onClick={handleClickDropdown}>
+          <button onClick={handleClickOpenMenu} data-testid="button-menu">
             <i className={dropdown ? "fa fa-times" : "fa fa-bars"} />
           </button>
         </div>
         {dropdown && (
-          <div className="menu-items">
+          <div className="menu-items" data-testid="grid-menu">
             <ul>
-              <li onClick={handleClickCloseMenu}>
-                <a href="#inicio">Ínicio</a>
-              </li>
-              <li onClick={handleClickCloseMenu}>
-                <a href="#quem-sou">Quem sou</a>
-              </li>
-              <li onClick={handleClickCloseMenu}>
-                <a href="#projetos">Projetos</a>
-              </li>
-              <li onClick={handleClickCloseMenu}>
-                <a href="#servicos">Serviços</a>
-              </li>
-              <li onClick={handleClickCloseMenu}>
-                <a href="#conhecimentos">Conhecimentos</a>
-              </li>
+              {listItemNav.map((menuItem, index) => {
+                return (
+                  <li key={index} onClick={handleClickCloseMenu}>
+                    <a href={menuItem.href}>{menuItem.text}</a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         )}

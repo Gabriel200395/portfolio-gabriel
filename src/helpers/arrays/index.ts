@@ -8,6 +8,11 @@ type instanceButtonActive = {
   active: string;
 };
 
+type PropsMenuItemNav = {
+  text: string;
+  href: string;
+};
+
 export const skills: instanceSkill[] = [
   {
     name: "HTML",
@@ -71,5 +76,28 @@ export const buttonsActive: instanceButtonActive[] = [
   {
     text: "Athan",
     active: "btn-3",
+  },
+];
+
+export const listItemNav: PropsMenuItemNav[] = [
+  {
+    text: "Ínicio",
+    href: "#inicio",
+  },
+  {
+    text: "Quem sou",
+    href: "#quem-sou",
+  },
+  {
+    text: "Projetos",
+    href: "#projetos",
+  },
+  {
+    text: "Serviços",
+    href: "#servicos",
+  },
+  {
+    text: "Conhecimentos",
+    href: "#conhecimentos",
   },
 ];
