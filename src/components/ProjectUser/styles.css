@@ -90,6 +90,11 @@
   border: solid 1px #d1d1d1;
 }
 
+.project-c .button-view-more:active {
+  background-color: #047c3f;
+  border: none;
+}
+
 @media (max-width: 768px) {
   .project-c {
     padding-top: 60px;
