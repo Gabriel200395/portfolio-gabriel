@@ -1,5 +1,4 @@
-import Animate from "@charlesvien/react-animatecss";
-import { useEffect, useRef } from "react";
+import {useRef } from "react";
 
 import "./styles.css";
 

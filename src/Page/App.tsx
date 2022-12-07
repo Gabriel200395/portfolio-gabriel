@@ -6,7 +6,7 @@ import ProjectUser from "../components/ProjectUser";
 import ServicesUser from "../components/ServicesUser";
 import Knowledge from "../components/Knowledge";
 import Footer from "../components/Footer";
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 
 //desensolver site {
 //responsivo[OK]
@@ -17,13 +17,9 @@ import { useEffect, useState } from "react";
 //refatorar codigo
 //teste unitarios
 
-interface propsSkills {
-  name: string;
-  valueEnd: number;
-}
+
 
 function App() {
-  const [scrollEvent, setScrollEvent] = useState<boolean>(false);
 
   const body = document.querySelector("#root") as HTMLElement;
   useEffect(() => {
