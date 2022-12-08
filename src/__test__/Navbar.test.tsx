@@ -6,21 +6,11 @@ describe("Testando Componente Navbar", () => {
   it("Navbar Menu Items", () => {
     render(<Navbar />);
 
-    expect(
-      screen.getByRole("link", { name: listItemNav[0].text })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("link", { name: listItemNav[1].text })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("link", { name: listItemNav[2].text })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("link", { name: listItemNav[3].text })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("link", { name: listItemNav[4].text })
-    ).toBeInTheDocument();
+    listItemNav.forEach((menuItem) =>
+      expect(
+        screen.getByRole("link", { name: menuItem.text })
+      ).toBeInTheDocument()
+    );
 
     expect(screen.getByRole("button")).toBeInTheDocument();
   });
@@ -32,21 +22,15 @@ describe("Testando Componente Navbar", () => {
 
     fireEvent.click(buttonMenu);
 
+    function dropmenuItems() {
+      let title;
+      listItemNav.forEach((menuItem) => (title = menuItem.text));
+      return title;
+    }
+
     let ViewMenu = screen.getByTestId("grid-menu");
     within(ViewMenu).getByRole("link", {
-      name: listItemNav[0].text,
-    });
-    within(ViewMenu).getByRole("link", {
-      name: listItemNav[1].text,
-    });
-    within(ViewMenu).getByRole("link", {
-      name: listItemNav[2].text,
-    });
-    within(ViewMenu).getByRole("link", {
-      name: listItemNav[3].text,
-    });
-    within(ViewMenu).getByRole("link", {
-      name: listItemNav[4].text,
+      name: dropmenuItems(),
     });
 
     fireEvent.click(

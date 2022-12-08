@@ -39,21 +39,26 @@ describe("Testando Component Project", () => {
     let project6 = screen.getByRole("heading", { name: /pokedex6/i });
     let buttonComeBack = screen.getByRole("button", { name: /voltar/i });
 
-    expect(project1).toBeInTheDocument();
-    expect(project2).toBeInTheDocument();
-    expect(project3).toBeInTheDocument();
-    expect(project4).toBeInTheDocument();
-    expect(project5).toBeInTheDocument();
-    expect(project6).toBeInTheDocument();
+    let elementsTitleCards = [
+      project1,
+      project2,
+      project3,
+      project4,
+      project5,
+      project6,
+    ];
+
+    elementsTitleCards.forEach((title) => expect(title).toBeInTheDocument());
+
     expect(buttonComeBack).toBeInTheDocument();
 
     fireEvent.click(buttonComeBack);
-
-    expect(project1).toBeInTheDocument();
-    expect(project2).toBeInTheDocument();
-    expect(project3).toBeInTheDocument();
+    elementsTitleCards
+      .slice(0, 2)
+      .forEach((title) => expect(title).toBeInTheDocument());
 
     expect(buttonViewMore).toBeInTheDocument();
+
     expect(window.scroll).toHaveBeenCalled();
     expect(window.scroll).toHaveBeenCalledWith({
       behavior: "smooth",

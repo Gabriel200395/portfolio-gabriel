@@ -1,6 +1,7 @@
 import { fireEvent, screen, render, within } from "@testing-library/react";
 import Experience from "../components/Experience";
 
+//testa clicks buttons projects
 
 describe("Testando Componente Experience", () => {
   it("Butões", () => {
@@ -19,11 +20,12 @@ describe("Testando Componente Experience", () => {
     render(<Experience />);
 
     let buttonGnSystems = screen.getByRole("button", { name: /gnsystems/i });
-    fireEvent.click(buttonGnSystems);
-
     let headerGnSystems = screen.getByRole("heading", {
       name: /gnsystems/i,
     });
+
+    fireEvent.click(buttonGnSystems);
+
     expect(headerGnSystems).toBeInTheDocument();
   });
 
@@ -43,7 +45,7 @@ describe("Testando Componente Experience", () => {
     let buttonAthan = screen.getByRole("button", { name: /athan/i });
     fireEvent.click(buttonAthan);
 
-    let headerAthan = screen.getByRole("heading", { name: /athan/i });
+    let headerAthan = screen.getByRole("heading", { name: /athan/i }); 
     expect(headerAthan).toBeInTheDocument();
   });
 });
