@@ -24,10 +24,10 @@ const ProjectUser = () => {
       <>
         <div className="project-grid-container">
           {projectsCard["page" + eventClickProject].arrProjects.map(
-            (_, index) => {
+            (project, index) => {
               return (
                 <div className="card" key={index}>
-                  <h3>Pokedex</h3>
+                  <h3>{project.titulo}</h3>
                   <p>
                     Site institucional de banco digital moderno, feito em HTML,
                     Sass e JavaScript.

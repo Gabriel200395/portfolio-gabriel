@@ -2,10 +2,6 @@ import { fireEvent, screen, render, within } from "@testing-library/react";
 import Navbar from "../components/Navbar";
 import { listItemNav } from "../helpers/arrays";
 
-//teste funcionalidade menu hambuguer[OK]
-//testa clicks buttons experiencia
-//testa clicks buttons projects
-
 describe("Testando Componente Navbar", () => {
   it("Navbar Menu Items", () => {
     render(<Navbar />);

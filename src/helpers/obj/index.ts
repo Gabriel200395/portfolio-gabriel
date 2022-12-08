@@ -18,7 +18,6 @@ type instanceProjects = {
   };
 };
 
-
 export const experienceObj: propsExperienceData = {
   Gnsystems: {
     text: " Atualmente trabalho como professor conteudista em frontend na Digital House, o trabalho consiste em criar conteúdos para asaulas de especialização frontend. Alguns temas dos conteúdos realizados foram: React, Redux, TypeScript, Testes, GraphQL, Next.js, MUI, React Hook Form e styled-components",
@@ -29,13 +28,13 @@ export const experienceObj: propsExperienceData = {
   Intellectx: {
     text: " Atualmente trabalho como professor conteudista em frontend na Digital House, o trabalho consiste em criar conteúdos para asaulas de especialização frontend. Alguns temas dos conteúdos realizados foram: React, Redux, TypeScript, Testes, GraphQL, Next.js, MUI, React Hook Form e styled-components",
     profession: "Professor conteudista em Frontend",
-    data: "Intellectx",
+    data: "Nov 2021 - Atual Quase 1 ano",
     titulo: "Intellectx",
   },
   Athan: {
     text: " Atualmente trabalho como professor conteudista em frontend na Digital House, o trabalho consiste em criar conteúdos para asaulas de especialização frontend. Alguns temas dos conteúdos realizados foram: React, Redux, TypeScript, Testes, GraphQL, Next.js, MUI, React Hook Form e styled-components",
     profession: "Professor conteudista em Frontend",
-    data: "Athan",
+    data: "Nov 2021 - Atual Quase 1 ano",
     titulo: "Athan",
   },
 };
@@ -44,17 +43,17 @@ export const projectsCard: instanceProjects = {
   page1: {
     arrProjects: [
       {
-        titulo: "Pokedex",
-        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
-        buttonText: "Vizualizar Projeto",
-      },
-      {
         titulo: "Pokedex1",
         text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
         buttonText: "Vizualizar Projeto",
       },
       {
-        titulo: "Pokede0",
+        titulo: "Pokedex2",
+        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
+        buttonText: "Vizualizar Projeto",
+      },
+      {
+        titulo: "Pokedex3",
         text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
         buttonText: "Vizualizar Projeto",
       },
@@ -63,36 +62,35 @@ export const projectsCard: instanceProjects = {
   page2: {
     arrProjects: [
       {
-        titulo: "Pokedex",
-        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
-        buttonText: "Vizualizar Projeto",
-      },
-      {
         titulo: "Pokedex1",
         text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
         buttonText: "Vizualizar Projeto",
       },
       {
-        titulo: "Pokede0",
+        titulo: "Pokedex2",
         text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
         buttonText: "Vizualizar Projeto",
       },
       {
-        titulo: "Pokedex",
+        titulo: "Pokedex3",
         text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
         buttonText: "Vizualizar Projeto",
       },
       {
-        titulo: "Pokedex1",
+        titulo: "Pokedex4",
         text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
         buttonText: "Vizualizar Projeto",
       },
       {
-        titulo: "Pokede0",
+        titulo: "Pokedex5",
+        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
+        buttonText: "Vizualizar Projeto",
+      },
+      {
+        titulo: "Pokedex6",
         text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
         buttonText: "Vizualizar Projeto",
       },
     ],
   },
 };
-
