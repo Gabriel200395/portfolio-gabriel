@@ -17,7 +17,7 @@ const Experience = () => {
 
   return (
     <div className="experience-c">
-      <div className="experience-container-grid-main">
+      <div className="experience-container-grid-main" data-anime="left">
         <div>
           <h2>
             Experiência <span>.</span>

@@ -1,11 +1,17 @@
 .services-c {
   background-color: #040405;
-  height: 500px;
-  width: 100%;
+  height: 500px; 
+  display: flex;
+  align-items: center;
+}
+
+.services-c .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; 
+  width: 100%;
+
 }
 
 .services-c .service-grid-container {

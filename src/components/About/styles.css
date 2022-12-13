@@ -1,8 +1,12 @@
 .about-c {
   background-color: #09090b;
+} 
+
+.about-c .container {
+  display: flex;
   height: 500px;
   width: 100%;
-  display: flex;
+
 }
 
 .about-c h2 {

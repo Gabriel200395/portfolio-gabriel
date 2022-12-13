@@ -1,15 +1,18 @@
 .knowledge-c {
   background-color: #09090b;
+}
+
+.knowledge-c .container {
   height: 820px;
   width: 100%;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  overflow: hidden;
 }
 
-.knowledge-c .grid-skills {
+.knowledge-c .container .grid-skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   grid-auto-rows: 120px;
@@ -18,7 +21,7 @@
   grid-gap: 20px;
 }
 
-.knowledge-c h2 {
+.knowledge-c .container h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 35px;
   font-weight: 600;
@@ -26,7 +29,7 @@
   margin-bottom: 50px;
 }
 
-.knowledge-c .card-skill h3 {
+.knowledge-c .container .card-skill h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -35,7 +38,7 @@
   text-transform: uppercase;
 }
 
-.knowledge-c .card-skill {
+.knowledge-c .container .card-skill {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +54,7 @@
 }
 
 @media (max-width: 768px) {
-  .knowledge-c {
+  .knowledge-c .container {
     height: 100%;
     padding-top: 80px;
     padding-bottom: 60px;

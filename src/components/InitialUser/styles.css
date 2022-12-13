@@ -1,12 +1,12 @@
 .initial-c {
   background-color: #040405;
-  height: 550px;
+  height: 650px;
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding-left: 60px;
+  padding-right: 60px;
   padding-top: 60px;
 }
 
@@ -33,7 +33,7 @@
 
 .initial-c p {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   color: #d1d1d1;
   margin-top: 30px;
@@ -41,6 +41,7 @@
   width: 100%;
   margin-bottom: 30px;
   line-height: 22px;
+  text-align: left;
 }
 
 .initial-c button {
@@ -61,6 +62,40 @@
   opacity: 1;
   animation: flash 0.7s infinite;
   font-weight: 400;
+}
+
+.grid-ebook-1 {
+  width: 50%;
+}
+
+.grid-ebook-2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: animate 1s infinite alternate;
+  -webkit-animation: animate 1s infinite alternate;
+}
+
+.grid-ebook-2 img {
+  height: 300px;
+}
+
+@keyframes animate {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-14px);
+  }
+}
+@-webkit-keyframes animate {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
 }
 
 @keyframes flash {
