@@ -4,14 +4,13 @@
   width: 100%;
   padding-top: 80px;
   padding-bottom: 80px;
-} 
+}
 
-.project-c .container{
+.project-c .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 
 .project-c .project-grid-container {
@@ -104,4 +103,14 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .project-c .project-grid-container {
+    width: 80%;
+  }
+  .project-c .project-grid-container .card {
+    margin-bottom: 20px;
+  } 
+
 }

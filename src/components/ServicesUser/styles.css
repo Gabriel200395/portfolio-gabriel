@@ -1,6 +1,6 @@
 .services-c {
   background-color: #040405;
-  height: 500px; 
+  height: 500px;
   display: flex;
   align-items: center;
 }
@@ -9,9 +9,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column;
   width: 100%;
-
 }
 
 .services-c .service-grid-container {
@@ -102,13 +101,16 @@
   .services-c h2 {
     margin-bottom: 20px;
   }
-  .services-c .service-grid-container {
-    display: block;
-    width: 300px;
-  }
 
   .services-c .service-grid-container .card {
     margin-bottom: 20px;
     height: 190px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .services-c .service-grid-container {
+    display: block;
+    width: 300px;
   }
 }
