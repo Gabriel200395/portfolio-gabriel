@@ -60,7 +60,7 @@
     padding-bottom: 60px;
   }
 
-  .knowledge-c .grid-skills {
+  .knowledge-c .container .grid-skills {
     grid-template-columns: repeat(auto-fit, minmax(160px, auto));
   }
 }
