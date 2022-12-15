@@ -20,7 +20,7 @@ const ProjectUser = () => {
 
   return (
     <div className="project-c" id="projetos">
-      <div className="container" data-anime="right">
+      <div className="container" data-anime="left">
         <h2>Projetos</h2>
         <>
           <div className="project-grid-container">

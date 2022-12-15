@@ -5,7 +5,7 @@ import "./styles.css";
 const Knowledge = () => {
   return (
     <div className="knowledge-c" id="conhecimentos">
-      <div className="container" data-anime="right">
+      <div className="container" data-anime="left">
         <h2>Conhecimentos</h2>
         <div className="grid-skills">
           {skills.map((skill, index) => {

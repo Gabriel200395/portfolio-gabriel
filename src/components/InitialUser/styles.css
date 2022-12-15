@@ -114,21 +114,27 @@
   transform: translateY(8px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .initial-c {
     padding-left: 29px;
     padding-top: 60px;
     padding-right: 10px;
     flex-direction: column;
-    height: 700px;
+    height: 900px;
   }
 
   .initial-c .grid-ebook img {
     height: 150px;
   }
 
-  .initial-c .grid-info-user {
+  .initial-c {
     width: 100%;
     margin-bottom: 50px;
   }
 }
+
+/* @media (min-width: 300px) and (max-width: 800px) {
+  .initial-c .grid-ebook img {
+    height: 150px;
+  }
+} */

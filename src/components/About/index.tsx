@@ -5,7 +5,7 @@ import user from "../../assets/icon.png";
 const About = () => {
   return (
     <div className="about-c" id="quem-sou">
-      <div className="container" data-anime="top">
+      <div className="container" data-anime="left">
         <div className="img-user">
           <img src={user} alt={user} />
         </div>
