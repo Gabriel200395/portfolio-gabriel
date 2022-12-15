@@ -134,7 +134,7 @@
 }
  
 
-@media (min-width: 800px) and (max-width: 1000px) {
+@media (min-width: 770px) and (max-width: 1000px) {
   .initial-c .grid-ebook img {
     height: 150px;
   } 

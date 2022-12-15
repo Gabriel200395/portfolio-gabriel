@@ -126,7 +126,7 @@
   margin-bottom: 30px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 1199px) {
   .experience-c {
     height: 100%;
     padding-top: 60px;
@@ -217,10 +217,11 @@
   } */
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   .experience-container-grid-main-data-mobile {
     display: none;
-  }
+  } 
+  
 }
 
 @media (min-width: 200px) and (max-width: 600px) {

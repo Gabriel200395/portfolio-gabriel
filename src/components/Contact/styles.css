@@ -102,7 +102,7 @@
 
   .contact-c .contact-grid-container {
     width: 300px; 
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 300px 300px;
   }
 }
 
@@ -121,7 +121,7 @@
  
 
 
-@media (min-width: 800px) and (max-width: 1300px) {
+@media (min-width: 770px) and (max-width: 1300px) {
   .contact-c {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -138,7 +138,7 @@
 
   .contact-c .contact-grid-container {
     width: 300px; 
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 300px 300px ;
   }
 
 }
