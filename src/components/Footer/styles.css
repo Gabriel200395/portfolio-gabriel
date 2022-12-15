@@ -3,10 +3,8 @@
   height: 60px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding-left: 60px;
-  padding-right: 30px;
 }
 .footer-c h3 {
   font-family: "Montserrat", sans-serif;

@@ -16,7 +16,7 @@ const InitialUser = () => {
           alta qualidade de código. Atualmente estou trabalhando com tecnologias
           centradas em Javascript.
         </p>
-        <button>Contato</button>
+        <button onClick={() => window.location.href = "#contato"}>Contato</button>
       </div>
 
       <div className="grid-ebook">

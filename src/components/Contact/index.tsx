@@ -4,9 +4,7 @@ const ServicesUser = () => {
   return (
     <div className="contact-c" id="contato">
       <div className="container" data-anime="left">
-        <h2>
-          Contato<span>.</span>
-        </h2>
+        <h2>Contato</h2>
         <div className="contact-grid-container">
           <div className="card">
             <a
