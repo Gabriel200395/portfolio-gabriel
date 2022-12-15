@@ -6,6 +6,7 @@ type instanceSkill = {
 type instanceButtonActive = {
   text: string;
   active: string;
+  flag: string;
 };
 
 type PropsMenuItemNav = {
@@ -68,18 +69,22 @@ export const buttonsActive: instanceButtonActive[] = [
   {
     text: "BRB - Banco de Brasília",
     active: "btn-1",
+    flag: "BRB",
   },
   {
     text: "Gnsystems",
     active: "btn-2",
+    flag: "Gnsystems",
   },
   {
     text: "Intellectx",
     active: "btn-3",
+    flag: "Intellectx",
   },
   {
     text: "Athan",
     active: "btn-4",
+    flag: "Athan",
   },
 ];
 

@@ -5,7 +5,9 @@ import Experience from "../components/Experience";
 import ProjectUser from "../components/ProjectUser";
 import ServicesUser from "../components/ServicesUser";
 import Knowledge from "../components/Knowledge";
+import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+
 import { useEffect } from "react";
 
 function App() {
@@ -58,6 +60,7 @@ function App() {
       <ProjectUser />
       <ServicesUser />
       <Knowledge />
+      <Contact />
       <Footer />
     </>
   );

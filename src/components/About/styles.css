@@ -10,7 +10,7 @@
 
 .about-c h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 28px;
+  font-size: 35px;
   font-weight: 600;
   color: #fff;
   margin-bottom: 30px;
@@ -18,12 +18,13 @@
 
 .about-c p {
   font-family: "Montserrat", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 500;
   color: #d1d1d1;
   width: 100%;
   max-width: 500px;
   line-height: 24px;
+  text-align: left;
 }
 
 .about-c span {
@@ -78,7 +79,6 @@
   }
 
   .about-c p {
-    text-align: center;
     font-size: 16px;
     padding-left: 10px;
     padding-right: 10px;

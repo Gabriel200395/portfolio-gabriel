@@ -6,7 +6,7 @@ import { buttonsActive } from "../../helpers/arrays";
 
 const Experience = () => {
   const [experienceEventTarget, setExperienceEventTarget] =
-    useState("Gnsystems");
+    useState("BRB");
 
   const [experienceButtonActive, SetExperienceButtonActive] = useState("btn-1");
 
@@ -36,7 +36,7 @@ const Experience = () => {
                         : "button-default"
                     }
                     onClick={() =>
-                      handleClickExperience(button.text, button.active)
+                      handleClickExperience(button.flag, button.active)
                     }
                   >
                     {button.text}

@@ -1,4 +1,3 @@
-import React from "react";
 import "./styles.css";
 import user from "../../assets/icon.png";
 
@@ -14,9 +13,11 @@ const About = () => {
             Vou contar um pouco sobre meu trabalho<span>...</span>
           </h2>
           <p>
-            Sou Formado em Gestão da Tecnologia da Informação, Atuo no mercado
-            como front-end Developer, oferecendo soluções completas para
-            sistemas web, mobile, desktop, e sistemas integrados.
+            Formado em Gestão da Tecnologia da Informação desde de
+            Dezembro/2019, Há 5 anos atuo no mercado como programador Front-end,
+            oferecendo soluções completas para sistemas web, mobile, desktop, e
+            sistemas integrados. Atualmente faço parte do time de
+            Desenvolvimento da Imprensa Nacional de Brasília.
           </p>
         </div>
       </div>
