@@ -1,4 +1,3 @@
-import { useRef, useEffect } from "react";
 import nootbook from "../../assets/nootebook.png";
 import "./styles.css";
 
