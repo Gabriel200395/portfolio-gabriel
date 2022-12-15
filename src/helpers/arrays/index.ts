@@ -66,16 +66,20 @@ export const skills: instanceSkill[] = [
 
 export const buttonsActive: instanceButtonActive[] = [
   {
-    text: "Gnsystems",
+    text: "BRB - Banco de Brasília",
     active: "btn-1",
   },
   {
-    text: "Intellectx",
+    text: "Gnsystems",
     active: "btn-2",
   },
   {
-    text: "Athan",
+    text: "Intellectx",
     active: "btn-3",
+  },
+  {
+    text: "Athan",
+    active: "btn-4",
   },
 ];
 

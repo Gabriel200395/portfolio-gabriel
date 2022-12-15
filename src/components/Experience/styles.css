@@ -129,11 +129,45 @@
     height: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
   }
   .experience-c .experience-container-grid-main-data {
-    flex-direction: column;
+    display: none;
   }
 
+  .experience-container-grid-main-data-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .experience-container-grid-main-data-mobile button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #09090b;
+    width: 500px;
+    outline: none;
+    border: none;
+    height: 70px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .experience-container-grid-main-data-mobile i {
+    font-size: 20px;
+  }
+
+  /* 
   .experience-c .experience-companies {
     flex-direction: row;
     justify-content: center;
@@ -178,5 +212,34 @@
   .experience-c .experience-data p {
     padding-right: 10px;
     padding-left: 10px;
+  } */
+}
+
+@media (min-width: 800px) {
+  .experience-container-grid-main-data-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 600px) {
+  .experience-container-grid-main-data-mobile button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #09090b;
+    width: 300px;
+    outline: none;
+    border: none;
+    height: 70px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
   }
 }

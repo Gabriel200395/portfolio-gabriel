@@ -57,6 +57,21 @@ const Experience = () => {
             <p>{experienceObj[experienceEventTarget].text}</p>
           </div>
         </div>
+
+        <div className="experience-container-grid-main-data-mobile">
+          <button>
+            BRB - Banco de Brasilia <i className="fas fa-solid fa-plus" />
+          </button>
+          <button>
+            GNsystems <i className="fas fa-solid fa-plus" />
+          </button>
+          <button>
+            Intellectx <i className="fas fa-solid fa-plus" />
+          </button>
+          <button>
+            Athan <i className="fas fa-solid fa-plus" />
+          </button>
+        </div>
       </div>
     </div>
   );
