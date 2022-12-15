@@ -114,7 +114,7 @@
   transform: translateY(8px);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .initial-c {
     padding-left: 29px;
     padding-top: 60px;
@@ -127,14 +127,8 @@
     height: 150px;
   }
 
-  .initial-c {
+  .initial-c .grid-info-user{
     width: 100%;
     margin-bottom: 50px;
   }
 }
-
-/* @media (min-width: 300px) and (max-width: 800px) {
-  .initial-c .grid-ebook img {
-    height: 150px;
-  }
-} */
