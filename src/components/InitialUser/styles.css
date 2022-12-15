@@ -33,7 +33,7 @@
 
 .initial-c p {
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   color: #d1d1d1;
   margin-top: 30px;
@@ -61,14 +61,16 @@
   margin-left: 5px;
   opacity: 1;
   animation: flash 0.7s infinite;
-  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
 }
 
-.grid-ebook-1 {
+.initial-c .grid-info-user {
   width: 50%;
 }
 
-.grid-ebook-2 {
+.initial-c .grid-ebook {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -77,8 +79,8 @@
   -webkit-animation: animate 1s infinite alternate;
 }
 
-.grid-ebook-2 img {
-  height: 300px;
+.initial-c .grid-ebook img {
+  height: 250px;
 }
 
 @keyframes animate {
@@ -117,5 +119,16 @@
     padding-left: 29px;
     padding-top: 60px;
     padding-right: 10px;
+    flex-direction: column;
+    height: 700px;
+  }
+
+  .initial-c .grid-ebook img {
+    height: 150px;
+  }
+
+  .initial-c .grid-info-user {
+    width: 100%;
+    margin-bottom: 50px;
   }
 }

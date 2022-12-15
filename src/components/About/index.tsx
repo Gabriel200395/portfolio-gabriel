@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import user from "../../assets/icon.png"; 
+import user from "../../assets/icon.png";
 
 const About = () => {
   return (
@@ -11,13 +11,12 @@ const About = () => {
         </div>
         <div className="about-user">
           <h2>
-            Quem sou <span>.</span>
+            Vou contar um pouco sobre meu trabalho<span>...</span>
           </h2>
           <p>
-            Meu nome é Iuri Silva, ou “iuricode” (é como me chamam agora). Sou
-            freelancer como Front-end developer e UI Designer. Desenvolvo
-            interfaces modernas e de alta qualidade, concentrado em performance,
-            animações, responsividade e SEO.
+            Sou Formado em Gestão da Tecnologia da Informação, Atuo no mercado
+            como front-end Developer, oferecendo soluções completas para
+            sistemas web, mobile, desktop, e sistemas integrados.
           </p>
         </div>
       </div>

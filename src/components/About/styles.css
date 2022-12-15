@@ -1,17 +1,16 @@
 .about-c {
   background-color: #09090b;
-} 
+}
 
 .about-c .container {
   display: flex;
   height: 500px;
   width: 100%;
-
 }
 
 .about-c h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 35px;
+  font-size: 28px;
   font-weight: 600;
   color: #fff;
   margin-bottom: 30px;
@@ -19,7 +18,7 @@
 
 .about-c p {
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
   color: #d1d1d1;
   width: 100%;
@@ -83,5 +82,10 @@
     font-size: 16px;
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .about-c .container {
+    flex-direction: column;
+    height: 100%;
   }
 }
