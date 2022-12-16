@@ -1,20 +1,26 @@
-import { useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import "./styles.css";
 
 import { experienceObj } from "../../helpers/obj";
 import { buttonsActive } from "../../helpers/arrays";
+import { Console } from "console";
 
 const Experience = () => {
-  const [experienceEventTarget, setExperienceEventTarget] =
-    useState("BRB");
+  const [experienceEventTarget, setExperienceEventTarget] = useState("BRB");
 
   const [experienceButtonActive, SetExperienceButtonActive] = useState("btn-1");
+
+  const [collapseEventTarget, setCollapseEventTarget] = useState("");
+  const [toogle, setToogle] = useState(false);
 
   const handleClickExperience = (experience: string, active: string) => {
     setExperienceEventTarget(experience);
     SetExperienceButtonActive(active);
   };
 
+  const handleClickCollapseExperience = (experience: string) => {
+    setCollapseEventTarget(experience);
+  };
   return (
     <div className="experience-c">
       <div className="experience-container-grid-main" data-anime="left">
@@ -56,21 +62,6 @@ const Experience = () => {
             </div>
             <p>{experienceObj[experienceEventTarget].text}</p>
           </div>
-        </div>
-
-        <div className="experience-container-grid-main-data-mobile">
-          <button>
-            BRB - Banco de Brasilia <i className="fas fa-solid fa-plus" />
-          </button>
-          <button>
-            GNsystems <i className="fas fa-solid fa-plus" />
-          </button>
-          <button>
-            Intellectx <i className="fas fa-solid fa-plus" />
-          </button>
-          <button>
-            Athan <i className="fas fa-solid fa-plus" />
-          </button>
         </div>
       </div>
     </div>

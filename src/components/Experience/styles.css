@@ -133,48 +133,15 @@
     padding-bottom: 60px;
     text-align: center;
   }
+
   .experience-c .experience-container-grid-main-data {
-    display: none;
-  }
-
-  .experience-container-grid-main-data-mobile {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .experience-container-grid-main-data-mobile button {
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
-    background-color: #09090b;
-    width: 500px;
-    outline: none;
-    border: none;
-    height: 60px;
-    text-align: center;
-    padding-left: 20px;
     padding-right: 20px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 5px;
+    padding-left: 20px;
   }
 
-  .experience-container-grid-main-data-mobile i {
-    font-size: 20px;
-  }
-
-  /* 
   .experience-c .experience-companies {
-    flex-direction: row;
-    justify-content: center;
     width: 100%;
-    align-items: center;
   }
   .experience-container-grid-main h2 {
     text-align: center;
@@ -194,55 +161,25 @@
     .experience-data
     .experience-data-header
     .experience-data-container-header
-    h3 {
-    font-size: 14px;
-  }
-
-  .experience-c
-    .experience-data
-    .experience-data-header
-    .experience-data-container-header
     h4 {
-    font-size: 13px;
+    margin-top: 20px;
   }
 
   .experience-c .experience-data .experience-data-container-header {
     height: 50px;
-    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
   }
 
   .experience-c .experience-data p {
     padding-right: 10px;
     padding-left: 10px;
-  } */
-}
-
-@media (min-width: 1200px) {
-  .experience-container-grid-main-data-mobile {
-    display: none;
-  } 
-  
-}
-
-@media (min-width: 200px) and (max-width: 600px) {
-  .experience-container-grid-main-data-mobile button {
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
-    background-color: #09090b;
-    width: 300px;
-    outline: none;
-    border: none;
-    height: 70px;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 5px;
+    text-align: left;
   }
+
+  .experience-c .experience-data .experience-data-header h5 {
+    text-align: left;
+  }
+
 }
