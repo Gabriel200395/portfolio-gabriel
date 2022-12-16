@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./styles.css";
 import { projectsCard } from "../../helpers/obj";
 
@@ -10,22 +10,19 @@ const ProjectUser = () => {
 
   const handleClickProjectPrev = () => {
     setEventClickProject((c) => c - 1);
+
+    if (window.screen.width <= 1200) {
+      return scrollBody(2150);
+    }
     scrollBody(1550);
   };
 
   const handleClickProjectNext = () => {
     setEventClickProject((c) => c + 1);
+    if (window.screen.width <= 1200) {
+      return scrollBody(3050);
+    }
     scrollBody(2050);
-  }; 
-
-  const handleClickProjectMobilePrev = () => {
-    setEventClickProject((c) => c - 1);
-    scrollBody(2900);
-  };
-
-  const handleClickProjectMobileNext = () => {
-    setEventClickProject((c) => c + 1);
-    scrollBody(3300);
   };
 
   return (
@@ -41,7 +38,7 @@ const ProjectUser = () => {
                     <h3>{project.titulo}</h3>
                     <p>{project.text}</p>
                     <a href={project.link} target="_blank">
-                       {project.buttonText}
+                      {project.buttonText}
                     </a>
                   </div>
                 );
@@ -59,19 +56,7 @@ const ProjectUser = () => {
             disabled={projectsCard["page" + eventClickProject] ? false : true}
           >
             {eventClickProject === 1 ? "Ver Mais" : "Voltar"}
-          </button> 
-
-          <button
-            className="button-view-more-mobile"
-            onClick={
-              eventClickProject >= 2
-                ? handleClickProjectMobilePrev
-                : handleClickProjectMobileNext
-            }
-            disabled={projectsCard["page" + eventClickProject] ? false : true}
-          >
-            {eventClickProject === 1 ? "Ver Mais" : "Voltar"}
-          </button>  
+          </button>
         </>
       </div>
     </div>

@@ -97,22 +97,6 @@
   border: solid 1px #d1d1d1;
 }
 
-.project-c .button-view-more-mobile {
-  font-family: "Montserrat", sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  color: #d1d1d1;
-  width: 200px;
-  outline: none;
-  border: none;
-  height: 45px;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-top: 60px;
-  background-color: #09090b;
-  border: solid 1px #d1d1d1;
-}
 
 .project-c .button-view-more:active {
   background-color: #047c3f;
@@ -132,13 +116,5 @@
     padding-bottom: 60px;
   }
 
-   .project-c .button-view-more {
-    display: none;
-  } 
 }
 
- @media (min-width: 1200px) {
-  .project-c .button-view-more-mobile {
-    display: none;
-  }
-}
