@@ -6,51 +6,56 @@ describe("Testando Componente Navbar", () => {
   it("Navbar Menu Items", () => {
     render(<Navbar />);
 
-    listItemNav.forEach((menuItem) =>
-      expect(
-        screen.getByRole("link", { name: menuItem.text })
-      ).toBeInTheDocument()
-    );
-
-    expect(screen.getByRole("button")).toBeInTheDocument();
-  });
-
-  it("Funcionalidade de Abrir Menu Hambuguer e Click Menu Item", () => {
-    render(<Navbar />);
-
-    let buttonMenu = screen.getByRole("button");
-
-    fireEvent.click(buttonMenu);
-
-    function dropmenuItems() {
+    function menuItemsWeb() {
       let title;
       listItemNav.forEach((menuItem) => (title = menuItem.text));
       return title;
     }
 
-    let ViewMenu = screen.getByTestId("grid-menu");
+    let ViewMenu = screen.getByTestId("menu-items-web");
     within(ViewMenu).getByRole("link", {
-      name: dropmenuItems(),
+      name: menuItemsWeb(),
     });
 
-    fireEvent.click(
-      within(ViewMenu).getByRole("link", {
-        name: listItemNav[4].text,
-      })
-    );
+    expect(screen.getByRole("button")).toBeInTheDocument();
+  });
+});
 
-    expect(ViewMenu).not.toBeInTheDocument();
+it("Funcionalidade de Abrir Menu Hambuguer e Click Menu Item", () => {
+  render(<Navbar />);
+
+  let buttonMenu = screen.getByRole("button");
+  let ViewMenu = screen.getByTestId("grid-menu");
+
+  fireEvent.click(buttonMenu);
+
+  function dropmenuItems() {
+    let title;
+    listItemNav.forEach((menuItem) => (title = menuItem.text));
+    return title;
+  }
+
+  within(ViewMenu).getByRole("link", {
+    name: dropmenuItems(),
   });
 
-  it("Funcionalidade de Fechar Menu Hambuguer", () => {
-    render(<Navbar />);
+  fireEvent.click(
+    within(ViewMenu).getByRole("link", {
+      name: listItemNav[4].text,
+    })
+  );
 
-    let buttonMenu = screen.getByRole("button");
+  expect(ViewMenu).toHaveClass("false");
+});
 
-    fireEvent.doubleClick(buttonMenu);
+it("Funcionalidade de Fechar Menu Hambuguer", () => {
+  render(<Navbar />);
 
-    let ViewMenu = screen.queryByTestId("grid-menu");
+  let buttonMenu = screen.getByRole("button");
 
-    expect(ViewMenu).not.toBeInTheDocument();
-  });
+  fireEvent.doubleClick(buttonMenu);
+
+  let ViewMenu = screen.queryByTestId("grid-menu");
+
+  expect(ViewMenu).toHaveClass("false");
 });

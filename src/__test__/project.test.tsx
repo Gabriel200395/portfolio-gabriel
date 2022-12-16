@@ -7,9 +7,9 @@ describe("Testando Component Project", () => {
   it("Titulos Cards e Botão Ver Mais", () => {
     render(<Project />);
 
-    let project1 = screen.getByRole("heading", { name: /pokedex1/i });
-    let project2 = screen.getByRole("heading", { name: /pokedex2/i });
-    let project3 = screen.getByRole("heading", { name: /pokedex3/i });
+    let project1 = screen.getByRole("heading", { name: /Todo List/i });
+    let project2 = screen.getByRole("heading", { name: /Pokedex/i });
+    let project3 = screen.getByRole("heading", { name: /Sistema de Cadastro/i });
     let buttonViewMore = screen.getByRole("button", { name: /ver mais/i });
 
     expect(project1).toBeInTheDocument();
@@ -25,18 +25,14 @@ describe("Testando Component Project", () => {
     fireEvent.click(buttonViewMore);
 
     expect(window.scroll).toHaveBeenCalled();
-    expect(window.scroll).toHaveBeenCalledWith({
-      behavior: "smooth",
-      left: 0,
-      top: 1950,
-    });
+   
 
-    let project1 = screen.getByRole("heading", { name: /pokedex1/i });
-    let project2 = screen.getByRole("heading", { name: /pokedex2/i });
-    let project3 = screen.getByRole("heading", { name: /pokedex3/i });
-    let project4 = screen.getByRole("heading", { name: /pokedex4/i });
-    let project5 = screen.getByRole("heading", { name: /pokedex5/i });
-    let project6 = screen.getByRole("heading", { name: /pokedex6/i });
+    let project1 = screen.getByRole("heading", { name: /Todo List/i });
+    let project2 = screen.getByRole("heading", { name: /Pokedex/i });
+    let project3 = screen.getByRole("heading", { name: /Sistema de Cadastro/i });
+    let project4 = screen.getByRole("heading", { name: /Github Profiles/i });
+    let project5 = screen.getByRole("heading", { name: /Rgba Generator/i });
+   
     let buttonComeBack = screen.getByRole("button", { name: /voltar/i });
 
     let elementsTitleCards = [
@@ -45,7 +41,6 @@ describe("Testando Component Project", () => {
       project3,
       project4,
       project5,
-      project6,
     ];
 
     elementsTitleCards.forEach((title) => expect(title).toBeInTheDocument());
@@ -60,10 +55,6 @@ describe("Testando Component Project", () => {
     expect(buttonViewMore).toBeInTheDocument();
 
     expect(window.scroll).toHaveBeenCalled();
-    expect(window.scroll).toHaveBeenCalledWith({
-      behavior: "smooth",
-      left: 0,
-      top: 1550,
-    });
-  });
+   
+  }); 
 });

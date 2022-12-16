@@ -15,7 +15,7 @@ const Navbar = () => {
           <h3>G{""}S</h3>
           <p>Gabriel Souza</p>
         </div>
-        <ul className="menu-web">
+        <ul className="menu-web" data-testid="menu-items-web">
           {listItemNav.map((menuItem, index) => {
             return (
               <li key={index}>
@@ -30,8 +30,8 @@ const Navbar = () => {
             <i className={dropdown ? "fa fa-times" : "fa fa-bars"} />
           </button>
         </div>
-          <div className={`menu-items` } data-testid="grid-menu">
-            <ul  className={`${dropdown && "active"}` }>
+          <div className={`menu-items`}>
+            <ul  className={`${dropdown && "active"}` } data-testid="grid-menu">
               {listItemNav.map((menuItem, index) => {
                 return (
                   <li key={index} onClick={handleClickCloseMenu}>
@@ -41,7 +41,6 @@ const Navbar = () => {
               })}
             </ul>
           </div>
-        
       </nav>
     </div>
   );

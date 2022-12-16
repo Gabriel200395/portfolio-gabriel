@@ -189,7 +189,7 @@
     display: none;
   }
 
-  .nav-c .menu-items {
+  .nav-c .menu-items ul{
     display: none;
   }
 }
