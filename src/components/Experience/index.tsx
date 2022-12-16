@@ -1,26 +1,19 @@
-import { ChangeEvent, useEffect, useState } from "react";
+import { useState } from "react";
 import "./styles.css";
 
 import { experienceObj } from "../../helpers/obj";
 import { buttonsActive } from "../../helpers/arrays";
-import { Console } from "console";
 
 const Experience = () => {
   const [experienceEventTarget, setExperienceEventTarget] = useState("BRB");
 
   const [experienceButtonActive, SetExperienceButtonActive] = useState("btn-1");
 
-  const [collapseEventTarget, setCollapseEventTarget] = useState("");
-  const [toogle, setToogle] = useState(false);
-
   const handleClickExperience = (experience: string, active: string) => {
     setExperienceEventTarget(experience);
     SetExperienceButtonActive(active);
   };
 
-  const handleClickCollapseExperience = (experience: string) => {
-    setCollapseEventTarget(experience);
-  };
   return (
     <div className="experience-c">
       <div className="experience-container-grid-main" data-anime="left">
