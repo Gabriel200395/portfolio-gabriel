@@ -10,6 +10,7 @@ type propertyProjects = {
   titulo: string;
   text: string;
   buttonText: string;
+  link: string;
 };
 
 type instanceProjects = {
@@ -50,53 +51,56 @@ export const projectsCard: instanceProjects = {
   page1: {
     arrProjects: [
       {
-        titulo: "Pokedex1",
-        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
+        titulo: "Todo List",
+        text: "Todo List Desenvolvido com React JS, React Hooks, Typescript, React Testing Lybrary.",
         buttonText: "Vizualizar Projeto",
+        link: "https://github.com/Gabriel200395/reactJS_small_projects/tree/main/projetos/todo-list",
       },
       {
-        titulo: "Pokedex2",
-        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
+        titulo: "Pokedex",
+        text: "Pokedex Desenvolvido com React JS, React Hooks, Typescript, React Testing Lybrary.",
         buttonText: "Vizualizar Projeto",
+        link: "https://github.com/Gabriel200395/pokedex",
       },
       {
-        titulo: "Pokedex3",
-        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
+        titulo: "Sistema de Cadastro",
+        text: "Sistema de Cadastro Desenvolvido com React JS, Regex, React Hooks, Axios.",
         buttonText: "Vizualizar Projeto",
+        link: "https://github.com/Gabriel200395/user-registration",
       },
     ],
   },
   page2: {
     arrProjects: [
       {
-        titulo: "Pokedex1",
-        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
+        titulo: "Todo List",
+        text: "Todo List Desenvolvido com React JS, React Hooks, Typescript, React Testing Lybrary.",
         buttonText: "Vizualizar Projeto",
+        link: "https://github.com/Gabriel200395/reactJS_small_projects/tree/main/projetos/todo-list",
       },
       {
-        titulo: "Pokedex2",
-        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
+        titulo: "Pokedex",
+        text: "Pokedex Desenvolvido com React JS, React Hooks, Typescript, React Testing Lybrary.",
         buttonText: "Vizualizar Projeto",
+        link: "https://github.com/Gabriel200395/pokedex",
       },
       {
-        titulo: "Pokedex3",
-        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
+        titulo: "Sistema de Cadastro",
+        text: "Sistema de Cadastro Desenvolvido com React JS, Regex, React Hooks, Axios.",
         buttonText: "Vizualizar Projeto",
+        link: "https://github.com/Gabriel200395/user-registration",
       },
       {
-        titulo: "Pokedex4",
-        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
+        titulo: "Github Profiles",
+        text: "Github Profiles Desenvolvido com React JS, React Hooks, Axios.",
         buttonText: "Vizualizar Projeto",
+        link: "https://github.com/Gabriel200395/github-profiles",
       },
       {
-        titulo: "Pokedex5",
-        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
+        titulo: "Rgba Generator",
+        text: "Rgba Generator Desenvolvido com React JS, React Hooks",
         buttonText: "Vizualizar Projeto",
-      },
-      {
-        titulo: "Pokedex6",
-        text: "Site institucional de banco digital moderno, feito em HTML, Sass eJavaScript.",
-        buttonText: "Vizualizar Projeto",
+        link: "https://github.com/Gabriel200395/rgba-generator",
       },
     ],
   },

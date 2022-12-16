@@ -29,11 +29,10 @@ const ProjectUser = () => {
                 return (
                   <div className="card" key={index}>
                     <h3>{project.titulo}</h3>
-                    <p>
-                      Site institucional de banco digital moderno, feito em
-                      HTML, Sass e JavaScript.
-                    </p>
-                    <a href="texte">Vizualizar Projeto</a>
+                    <p>{project.text}</p>
+                    <a href={project.link} target="_blank">
+                       {project.buttonText}
+                    </a>
                   </div>
                 );
               }
