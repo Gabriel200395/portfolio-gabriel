@@ -19,19 +19,18 @@
 
 .scroll-active-header {
   background-color: #fff;
-} 
-
+}
 
 .scroll-active-header .menu-items {
-  background-color: #fff !important; 
-  border-top: solid 0.2px #1e1616 !important;
-} 
+  background-color: #fff !important;
+  border-top: solid 0.2px #d1d1d1 !important;
+}
 
 .scroll-active-header .nav-c {
   border: none;
 }
- 
-.scroll-active-menu-header button{
+
+.scroll-active-menu-header button {
   color: #1e1616 !important;
 }
 
@@ -106,6 +105,7 @@
   outline: none;
   background: transparent;
   color: #fff;
+  cursor: pointer;
 }
 
 .nav-c .menu-items {
@@ -114,64 +114,72 @@
   top: 79px;
   background: #040405;
   width: 100%;
-  padding-top: 20px; 
-  padding-bottom: 20px;
-  border-top: solid 1px #d1d1d1;
+  border-top: solid 0.2px #d1d1d1;
+  height: auto;
+}
+
+.nav-c .menu-items.active {
+  height: 100px;
+  overflow: auto;
 }
 
 .nav-c .menu-items ul {
-  display: block;
+  list-style: none;
+  margin: 0;
+  font-size: 18px;
+  overflow: hidden;
+  height: 0px;
+  transition: height 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.nav-c .menu-items li {
-  height: 49px;
+.nav-c .menu-items ul.active {
+  height: 300px;
 }
 
 .nav-c .menu-items li a:hover {
-  background-color: #f2f2f2; 
+  background-color: #f2f2f2;
+  color: #1e1616;
 }
 
 .nav-c .menu-items li a {
   color: #d1d1d1;
   font-weight: 600 !important;
   width: 100%;
-  height: 100%; 
+  height: 100%;
   display: flex;
-  align-items: center;  
+  align-items: center;
   padding-left: 12px;
   margin: 0px;
-
+  height: 50px;
 }
 
 @media (max-width: 768px) {
   .nav-c {
     flex-direction: row;
   }
-
-  .nav-c ul {
-    display: none;
-  }
 }
 
 @media (max-width: 768px) {
   .nav-c {
     flex-direction: row;
-    padding-left: 20px;
+    padding-left: 27px;
     padding-right: 20px;
   }
 
-  .nav-c ul {
+  .nav-c .menu-web {
     display: none;
   }
 
   .nav-c .dropdown {
     display: block;
-  } 
-
+  }
 }
 
 @media (max-width: 769px) {
-  .nav-c ul {
+  .nav-c .menu-web {
     display: none;
   }
 }
