@@ -3,7 +3,7 @@
 }
 
 .knowledge-c .container {
-  height: 820px;
+  height: 620px;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -14,7 +14,7 @@
 
 .knowledge-c .container .grid-skills {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
   grid-auto-rows: 120px;
   max-width: 1000px;
   width: 100%;

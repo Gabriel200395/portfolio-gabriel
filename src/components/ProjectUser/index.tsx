@@ -33,7 +33,7 @@ const ProjectUser = () => {
                       Site institucional de banco digital moderno, feito em
                       HTML, Sass e JavaScript.
                     </p>
-                    <button>Vizualizar Projeto</button>
+                    <a href="texte">Vizualizar Projeto</a>
                   </div>
                 );
               }

@@ -29,11 +29,11 @@ export const skills: instanceSkill[] = [
   },
   {
     name: "JS",
-    value: 80,
+    value: 70,
   },
   {
     name: "React JS",
-    value: 80,
+    value: 70,
   },
   {
     name: "React Native",
@@ -41,27 +41,27 @@ export const skills: instanceSkill[] = [
   },
   {
     name: "Typescript",
-    value: 60,
+    value: 50,
   },
   {
     name: "Redux",
-    value: 70,
+    value: 60,
   },
   {
     name: "Node JS",
-    value: 80,
+    value: 40,
   },
   {
     name: "Express",
-    value: 80,
+    value: 40,
   },
   {
     name: "Mysql",
     value: 40,
   },
   {
-    name: "GitHub",
-    value: 40,
+    name: "Sass",
+    value: 60,
   },
 ];
 
