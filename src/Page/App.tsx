@@ -1,3 +1,4 @@
+import { RotatingLines } from "react-loader-spinner";
 import Navbar from "../components/Navbar";
 import InitialUser from "../components/InitialUser";
 import About from "../components/About";
@@ -8,9 +9,11 @@ import Knowledge from "../components/Knowledge";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
   const body = document.querySelector("#root") as HTMLElement;
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -51,21 +54,38 @@ function App() {
     animeScroll();
   });
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(true);
+    }, 3000);
+  }, []);
   return (
     <>
-      <Navbar />
-      <InitialUser />
-      <About />
-      <Experience />
-      <ProjectUser />
-      <ServicesUser />
-      <Knowledge />
-      <Contact />
-      <Footer />
+      {loading ? (
+        <>
+          <Navbar />
+          <InitialUser />
+          <About />
+          <Experience />
+          <ProjectUser />
+          <ServicesUser />
+          <Knowledge />
+          <Contact />
+          <Footer />
+        </>
+      ) : (
+        <div className="loading-container">
+          <RotatingLines
+            strokeColor="#047c3f"
+            strokeWidth="5"
+            animationDuration="0.75"
+            width="80"
+            visible={true}
+          />
+        </div>
+      )}
     </>
   );
 }
 
 export default App;
-
-//font-family: 'Montserrat', sans-serif;

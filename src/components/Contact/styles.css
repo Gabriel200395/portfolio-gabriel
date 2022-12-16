@@ -42,10 +42,6 @@
   width: 100%;
 }
 
-.contact-c .contact-grid-container .card:hover {
-  border: solid 1px #047c3f;
-}
-
 .contact-c .contact-grid-container .card h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;

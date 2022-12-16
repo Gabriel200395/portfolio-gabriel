@@ -31,3 +31,11 @@
   opacity: 1;
   transform: translate3d(0px, 0px, 0px);
 }
+
+.loading-container {
+  height: 100vh;
+  background: #040405;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

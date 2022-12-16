@@ -31,10 +31,6 @@
   align-items: center;
   box-shadow: 2px 2px 2px 2px;
 }
-.services-c .service-grid-container .card:hover {
-  border: solid 1px #047c3f;
-}
-
 .services-c .service-grid-container .card h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
