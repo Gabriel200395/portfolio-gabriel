@@ -3,7 +3,7 @@ import { listItemNav } from "../../helpers/arrays";
 import "./styles.css";
 
 const Navbar = () => {
-  const [dropdown, setDropdown] = useState(true);
+  const [dropdown, setDropdown] = useState(false);
 
   const handleClickOpenMenu = () => setDropdown((state) => !state);
   const handleClickCloseMenu = () => setDropdown(false);
