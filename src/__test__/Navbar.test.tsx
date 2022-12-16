@@ -29,14 +29,14 @@ it("Funcionalidade de Abrir Menu Hambuguer e Click Menu Item", () => {
 
   fireEvent.click(buttonMenu);
 
-  function dropmenuItems() {
+  function menuItemsMobile() {
     let title;
     listItemNav.forEach((menuItem) => (title = menuItem.text));
     return title;
   }
 
   within(ViewMenu).getByRole("link", {
-    name: dropmenuItems(),
+    name: menuItemsMobile(),
   });
 
   fireEvent.click(
@@ -45,7 +45,7 @@ it("Funcionalidade de Abrir Menu Hambuguer e Click Menu Item", () => {
     })
   );
 
-  expect(ViewMenu).toHaveClass("false");
+  expect(ViewMenu).toHaveClass("close-menu");
 });
 
 it("Funcionalidade de Fechar Menu Hambuguer", () => {
@@ -57,5 +57,5 @@ it("Funcionalidade de Fechar Menu Hambuguer", () => {
 
   let ViewMenu = screen.queryByTestId("grid-menu");
 
-  expect(ViewMenu).toHaveClass("false");
+  expect(ViewMenu).toHaveClass("close-menu");
 });

@@ -31,7 +31,7 @@ const Navbar = () => {
           </button>
         </div>
           <div className={`menu-items`}>
-            <ul  className={`${dropdown && "active"}` } data-testid="grid-menu">
+            <ul  className={`${dropdown ? "open-menu" : "close-menu"}` } data-testid="grid-menu">
               {listItemNav.map((menuItem, index) => {
                 return (
                   <li key={index} onClick={handleClickCloseMenu}>

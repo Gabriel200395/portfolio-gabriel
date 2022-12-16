@@ -135,7 +135,7 @@
   justify-content: center;
 }
 
-.nav-c .menu-items ul.active {
+.nav-c .menu-items ul.open-menu {
   height: 300px;
 }
 
