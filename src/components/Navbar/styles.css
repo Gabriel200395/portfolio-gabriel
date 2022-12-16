@@ -23,7 +23,12 @@
 
 
 .scroll-active-header .menu-items {
-  background-color: #fff !important;
+  background-color: #fff !important; 
+  border-top: solid 0.2px #1e1616 !important;
+} 
+
+.scroll-active-header .nav-c {
+  border: none;
 }
  
 .scroll-active-menu-header button{
@@ -111,6 +116,7 @@
   width: 100%;
   padding-top: 20px; 
   padding-bottom: 20px;
+  border-top: solid 1px #d1d1d1;
 }
 
 .nav-c .menu-items ul {
@@ -150,7 +156,8 @@
 @media (max-width: 768px) {
   .nav-c {
     flex-direction: row;
-    padding-left: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .nav-c ul {

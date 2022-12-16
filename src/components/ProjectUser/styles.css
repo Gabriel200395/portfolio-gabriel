@@ -109,7 +109,7 @@
   }
 }
 
-@media (min-width: 300px) and (max-width: 600px) {
+@media (min-width: 300px) and (max-width: 1199px) {
   .project-c .project-grid-container {
     width: 80%;
   }
