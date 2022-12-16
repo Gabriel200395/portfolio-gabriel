@@ -24,10 +24,6 @@ function App() {
         "scroll-active-header",
         body.getBoundingClientRect().top < 0
       );
-      menu.classList.toggle(
-        "scroll-active-menu-header",
-        body.getBoundingClientRect().top < 0
-      );
     });
   }, [body]);
 
