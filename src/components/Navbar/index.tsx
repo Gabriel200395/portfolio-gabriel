@@ -34,7 +34,7 @@ const Navbar = () => {
             <ul  className={`${dropdown && "active"}` }>
               {listItemNav.map((menuItem, index) => {
                 return (
-                  <li key={index} /* onClick={handleClickCloseMenu} */>
+                  <li key={index} onClick={handleClickCloseMenu}>
                     <a href={menuItem.href}>{menuItem.text}</a>
                   </li>
                 );
