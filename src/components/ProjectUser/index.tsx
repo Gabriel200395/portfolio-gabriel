@@ -15,7 +15,17 @@ const ProjectUser = () => {
 
   const handleClickProjectNext = () => {
     setEventClickProject((c) => c + 1);
-    scrollBody(1930);
+    scrollBody(2050);
+  }; 
+
+  const handleClickProjectMobilePrev = () => {
+    setEventClickProject((c) => c - 1);
+    scrollBody(2900);
+  };
+
+  const handleClickProjectMobileNext = () => {
+    setEventClickProject((c) => c + 1);
+    scrollBody(3300);
   };
 
   return (
@@ -49,7 +59,19 @@ const ProjectUser = () => {
             disabled={projectsCard["page" + eventClickProject] ? false : true}
           >
             {eventClickProject === 1 ? "Ver Mais" : "Voltar"}
-          </button>
+          </button> 
+
+          <button
+            className="button-view-more-mobile"
+            onClick={
+              eventClickProject >= 2
+                ? handleClickProjectMobilePrev
+                : handleClickProjectMobileNext
+            }
+            disabled={projectsCard["page" + eventClickProject] ? false : true}
+          >
+            {eventClickProject === 1 ? "Ver Mais" : "Voltar"}
+          </button>  
         </>
       </div>
     </div>

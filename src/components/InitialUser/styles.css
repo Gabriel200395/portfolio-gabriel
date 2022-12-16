@@ -56,15 +56,7 @@
   background-color: #047c3f;
 }
 
-.initial-c p:after {
-  content: "|";
-  margin-left: 5px;
-  opacity: 1;
-  animation: flash 0.7s infinite;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-}
+
 
 .initial-c .grid-info-user {
   width: 50%;
@@ -100,15 +92,7 @@
   }
 }
 
-@keyframes flash {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
+
 
 .initial-c button:active {
   transform: translateY(8px);

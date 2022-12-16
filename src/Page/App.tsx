@@ -80,7 +80,6 @@ function App() {
             strokeWidth="5"
             animationDuration="0.75"
             width="80"
-            visible={true}
           />
         </div>
       )}
