@@ -14,10 +14,9 @@ const ServicesUser = () => {
             </div>
 
             <h3>Frontend</h3>
-           {/*  <p>
-              Site institucional de banco digital moderno, feito em HTML, Sass e
-              JavaScript.
-            </p> */}
+            <p>
+              Sites Institucionais e Sistemas Integrados.
+            </p> 
           </div>
           <div className="card">
             <div className="container-icon">
@@ -25,10 +24,9 @@ const ServicesUser = () => {
             </div>
 
             <h3>Backend</h3>
-          {/*   <p>
-              1 Site institucional de banco digital moderno, feito em HTML, Sass
-              e JavaScript.
-            </p> */}
+           <p>
+              Sistemas Intregados com Apis Rest e Banco de Dados.
+            </p> 
           </div>
         </div>
       </div>
