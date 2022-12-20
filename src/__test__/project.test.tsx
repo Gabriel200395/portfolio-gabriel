@@ -7,14 +7,14 @@ describe("Testando Component Project", () => {
   it("Titulos Cards e Botão Ver Mais", () => {
     render(<Project />);
 
-    let project1 = screen.getByRole("heading", { name: /Todo List/i });
-    let project2 = screen.getByRole("heading", { name: /Pokedex/i });
-    let project3 = screen.getByRole("heading", { name: /Rgba Generator/i });
+    let projectOne = screen.getByRole("heading", { name: /Todo List/i });
+    let projectTwo = screen.getByRole("heading", { name: /Pokedex/i });
+    let projectTh = screen.getByRole("heading", { name: /Rgba Generator/i });
     let buttonViewMore = screen.getByRole("button", { name: /ver mais/i });
 
-    expect(project1).toBeInTheDocument();
-    expect(project2).toBeInTheDocument();
-    expect(project3).toBeInTheDocument();
+    expect(projectOne).toBeInTheDocument();
+    expect(projectTwo).toBeInTheDocument();
+    expect(projectTh).toBeInTheDocument();
     expect(buttonViewMore).toBeInTheDocument();
   });
 
@@ -26,16 +26,16 @@ describe("Testando Component Project", () => {
 
     expect(window.scroll).toHaveBeenCalled();
 
-    let project1 = screen.getByRole("heading", { name: /Todo List/i });
-    let project2 = screen.getByRole("heading", { name: /Pokedex/i });
-    let project3 = screen.getByRole("heading", { name: /Rgba Generator/i });
+    let projectOne = screen.getByRole("heading", { name: /Todo List/i });
+    let projectTwo = screen.getByRole("heading", { name: /Pokedex/i });
+    let projectTh = screen.getByRole("heading", { name: /Rgba Generator/i });
     
     let buttonComeBack = screen.getByRole("button", { name: /voltar/i });
 
     let elementsTitleCards = [
-      project1,
-      project2,
-      project3,
+      projectOne,
+      projectTwo,
+      projectTh,
     ];
 
     elementsTitleCards.forEach((title) => expect(title).toBeInTheDocument());

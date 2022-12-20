@@ -14,10 +14,10 @@ const ServicesUser = () => {
             </div>
 
             <h3>Frontend</h3>
-            <p>
+           {/*  <p>
               Site institucional de banco digital moderno, feito em HTML, Sass e
               JavaScript.
-            </p>
+            </p> */}
           </div>
           <div className="card">
             <div className="container-icon">
@@ -25,10 +25,10 @@ const ServicesUser = () => {
             </div>
 
             <h3>Backend</h3>
-            <p>
+          {/*   <p>
               1 Site institucional de banco digital moderno, feito em HTML, Sass
               e JavaScript.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
