@@ -3,8 +3,8 @@ import Project from "../components/ProjectUser";
 
 window.scroll = jest.fn();
 
-describe("Testando Component Project", () => {
-  it("Titulos Cards e Botão Ver Mais", () => {
+describe("Testing Component Project", () => {
+  it("Titles Cards and Button See More", () => {
     render(<Project />);
 
     let projectOne = screen.getByRole("heading", { name: /Todo List/i });
@@ -18,7 +18,7 @@ describe("Testando Component Project", () => {
     expect(buttonViewMore).toBeInTheDocument();
   });
 
-  it("Funcionalidade Ver Mais e Voltar", () => {
+  it("See More and Back Functionality", () => {
     render(<Project />);
 
     let buttonViewMore = screen.getByRole("button", { name: /ver mais/i });

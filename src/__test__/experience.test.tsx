@@ -2,7 +2,7 @@ import { fireEvent, screen, render, within } from "@testing-library/react";
 import exp from "constants";
 import Experience from "../components/Experience";
 
-describe("Testando Componente Experience", () => {
+describe("Testing Component Experience", () => {
   it("Butões", () => {
     render(<Experience />);
 
@@ -19,7 +19,7 @@ describe("Testando Componente Experience", () => {
     expect(ButtonBRB).toBeInTheDocument();
   });
 
-  it("Clique Button BRB", () => {
+  it("Click Button BRB", () => {
     render(<Experience />);
 
     let ButtonBRB = screen.getByRole("button", {
@@ -35,7 +35,7 @@ describe("Testando Componente Experience", () => {
     expect(BrbHeader).toBeInTheDocument();
   });
 
-  it("Clique Button GNsystems", () => {
+  it("Click Button GNsystems", () => {
     render(<Experience />);
 
     let buttonGnSystems = screen.getByRole("button", { name: /gnsystems/i });
@@ -46,7 +46,7 @@ describe("Testando Componente Experience", () => {
     expect(headerGnSystems).toBeInTheDocument();
   });
 
-     it("Clique Button Intellectx", () => {
+     it("Click Button Intellectx", () => {
     render(<Experience />);
 
     let buttonIntellectx = screen.getByRole("button", { name: /intellectx/i });
@@ -56,7 +56,7 @@ describe("Testando Componente Experience", () => {
     expect(headerIntellectx).toBeInTheDocument();
   });
 
-  it("Clique Button Athan", () => {
+  it("Click Button Athan", () => {
     render(<Experience />);
 
     let buttonAthan = screen.getByRole("button", { name: /athan/i });

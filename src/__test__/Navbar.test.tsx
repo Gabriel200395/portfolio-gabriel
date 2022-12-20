@@ -2,7 +2,7 @@ import { fireEvent, screen, render, within } from "@testing-library/react";
 import Navbar from "../components/Navbar";
 import { listItemNav } from "../helpers/arrays";
 
-describe("Testando Componente Navbar", () => {
+describe("Testing Navbar Component", () => {
   it("Navbar Menu Items", () => {
     render(<Navbar />);
 
@@ -21,7 +21,7 @@ describe("Testando Componente Navbar", () => {
   });
 });
 
-it("Funcionalidade de Abrir Menu Hambuguer e Click Menu Item", () => {
+it("Functionality of Open Menu Hamburger and Click Menu Item", () => {
   render(<Navbar />);
 
   let buttonMenu = screen.getByRole("button");
@@ -48,7 +48,7 @@ it("Funcionalidade de Abrir Menu Hambuguer e Click Menu Item", () => {
   expect(ViewMenu).toHaveClass("close-menu");
 });
 
-it("Funcionalidade de Fechar Menu Hambuguer", () => {
+it("Hamburger Menu Closing Functionality", () => {
   render(<Navbar />);
 
   let buttonMenu = screen.getByRole("button");
