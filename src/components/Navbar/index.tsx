@@ -3,9 +3,7 @@ import { listItemNav } from "../../helpers/arrays";
 import "./styles.css";
 
 const Navbar = () => {
-  const [dropdown, setDropdown] = useState(
-    true
-  );
+  const [dropdown, setDropdown] = useState(false);
 
   const handleClickOpenMenu = () => setDropdown((state) => !state);
   const handleClickCloseMenu = () => setDropdown(false);
@@ -36,7 +34,7 @@ const Navbar = () => {
             <ul  className={`${dropdown ? "open-menu" : "close-menu"}` } data-testid="grid-menu">
               {listItemNav.map((menuItem, index) => {
                 return (
-                  <li key={index} /* onClick={handleClickCloseMenu} */>
+                  <li key={index} onClick={handleClickCloseMenu}>
                     <a href={menuItem.href}>{menuItem.text}</a>
                   </li>
                 );

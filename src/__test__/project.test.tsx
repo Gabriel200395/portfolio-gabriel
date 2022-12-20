@@ -9,7 +9,7 @@ describe("Testando Component Project", () => {
 
     let project1 = screen.getByRole("heading", { name: /Todo List/i });
     let project2 = screen.getByRole("heading", { name: /Pokedex/i });
-    let project3 = screen.getByRole("heading", { name: /Sistema de Cadastro/i });
+    let project3 = screen.getByRole("heading", { name: /Rgba Generator/i });
     let buttonViewMore = screen.getByRole("button", { name: /ver mais/i });
 
     expect(project1).toBeInTheDocument();
@@ -25,22 +25,17 @@ describe("Testando Component Project", () => {
     fireEvent.click(buttonViewMore);
 
     expect(window.scroll).toHaveBeenCalled();
-   
 
     let project1 = screen.getByRole("heading", { name: /Todo List/i });
     let project2 = screen.getByRole("heading", { name: /Pokedex/i });
-    let project3 = screen.getByRole("heading", { name: /Sistema de Cadastro/i });
-    let project4 = screen.getByRole("heading", { name: /Github Profiles/i });
-    let project5 = screen.getByRole("heading", { name: /Rgba Generator/i });
-   
+    let project3 = screen.getByRole("heading", { name: /Rgba Generator/i });
+    
     let buttonComeBack = screen.getByRole("button", { name: /voltar/i });
 
     let elementsTitleCards = [
       project1,
       project2,
       project3,
-      project4,
-      project5,
     ];
 
     elementsTitleCards.forEach((title) => expect(title).toBeInTheDocument());
@@ -55,6 +50,5 @@ describe("Testando Component Project", () => {
     expect(buttonViewMore).toBeInTheDocument();
 
     expect(window.scroll).toHaveBeenCalled();
-   
-  }); 
+  });
 });
