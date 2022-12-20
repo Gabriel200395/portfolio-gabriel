@@ -2,8 +2,6 @@ import { fireEvent, screen, render, within } from "@testing-library/react";
 import exp from "constants";
 import Experience from "../components/Experience";
 
-//testa clicks buttons projects
-
 describe("Testando Componente Experience", () => {
   it("Butões", () => {
     render(<Experience />);

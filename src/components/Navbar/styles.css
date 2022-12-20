@@ -138,10 +138,6 @@
   border-top: solid 0.2px #d1d1d1;
 }
 
-.nav-c .menu-items li a:hover {
-  background-color: #f2f2f2;
-  color: #1e1616;
-}
 
 .nav-c .menu-items li a {
   color: #d1d1d1;
@@ -153,6 +149,7 @@
   padding-left: 12px;
   margin: 0px;
   height: 50px;
+  outline: none;
 }
 
 @media (max-width: 768px) {

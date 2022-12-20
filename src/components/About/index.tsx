@@ -14,7 +14,7 @@ const About = () => {
           </h2>
           <p>
             Formado em Gestão da Tecnologia da Informação desde de
-            Dezembro/2019, Há 5 anos atuo no mercado como programador Front-end,
+            Dezembro/2019, atuo no mercado como programador Front-end,
             oferecendo soluções completas para sistemas web, mobile, desktop, e
             sistemas integrados. Atualmente faço parte do time de
             Desenvolvimento da Imprensa Nacional de Brasília.

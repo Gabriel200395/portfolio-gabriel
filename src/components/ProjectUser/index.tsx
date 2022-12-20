@@ -37,9 +37,12 @@ const ProjectUser = () => {
                   <div className="card" key={index}>
                     <h3>{project.titulo}</h3>
                     <p>{project.text}</p>
-                    <a href={project.link} target="_blank">
-                      {project.buttonText}
-                    </a>
+
+                    {project.link && (
+                      <a href={project.link} target="_blank">
+                        {project.buttonText}
+                      </a>
+                    )}
                   </div>
                 );
               }
