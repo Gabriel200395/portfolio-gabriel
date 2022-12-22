@@ -72,7 +72,7 @@ export const skills: instanceSkill[] = [
     value: 50,
   },
   {
-    name: "React-Testing-Lybrary",
+    name: "Testing-Lybrary",
     value: 70,
   },
 ];
@@ -112,10 +112,6 @@ export const listItemNav: PropsMenuItemNav[] = [
   {
     text: "Projetos",
     href: "#projetos",
-  },
-  {
-    text: "Serviços",
-    href: "#servicos",
   },
   {
     text: "Conhecimentos",
