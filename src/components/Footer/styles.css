@@ -4,7 +4,9 @@
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-left: 60px;
+  padding-right: 60px;
 }
 .footer-c h3 {
   font-family: "Montserrat", sans-serif;

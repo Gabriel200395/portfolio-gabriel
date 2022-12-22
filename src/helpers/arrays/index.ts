@@ -63,6 +63,18 @@ export const skills: instanceSkill[] = [
     name: "Sass",
     value: 60,
   },
+  {
+    name: "Css-Flexbox",
+    value: 70,
+  },
+  {
+    name: "Css-Grid-Layout",
+    value: 50,
+  },
+  {
+    name: "React-Testing-Lybrary",
+    value: 70,
+  },
 ];
 
 export const buttonsActive: instanceButtonActive[] = [
