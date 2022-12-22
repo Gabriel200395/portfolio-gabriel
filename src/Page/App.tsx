@@ -64,7 +64,6 @@ function App() {
           <About />
           <Experience />
           <ProjectUser />
-          <ServicesUser />
           <Knowledge />
           <Contact />
           <Footer />

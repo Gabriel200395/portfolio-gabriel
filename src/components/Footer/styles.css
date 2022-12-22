@@ -1,10 +1,10 @@
 .footer-c {
-  background-color: #09090b;
+  background-color: #040405;
   height: 60px;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  padding-left: 60px;
 }
 .footer-c h3 {
   font-family: "Montserrat", sans-serif;

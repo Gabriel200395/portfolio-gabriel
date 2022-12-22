@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { listItemNav } from "../../helpers/arrays";
+import logo from "../../assets/img/logo.png";
 import "./styles.css";
 
 const Navbar = () => {
@@ -12,8 +13,7 @@ const Navbar = () => {
     <div className="header">
       <nav className="nav-c">
         <div className="logo">
-          <h3>G{""}S</h3>
-          <p>Gabriel Souza</p>
+          <img src={logo} alt={logo} height={"40px"} />
         </div>
         <ul className="menu-web" data-testid="menu-items-web">
           {listItemNav.map((menuItem, index) => {
@@ -30,17 +30,20 @@ const Navbar = () => {
             <i className={dropdown ? "fa fa-times" : "fa fa-bars"} />
           </button>
         </div>
-          <div className={`menu-items`}>
-            <ul  className={`${dropdown ? "open-menu" : "close-menu"}` } data-testid="grid-menu">
-              {listItemNav.map((menuItem, index) => {
-                return (
-                  <li key={index} onClick={handleClickCloseMenu}>
-                    <a href={menuItem.href}>{menuItem.text}</a>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
+        <div className={`menu-items`}>
+          <ul
+            className={`${dropdown ? "open-menu" : "close-menu"}`}
+            data-testid="grid-menu"
+          >
+            {listItemNav.map((menuItem, index) => {
+              return (
+                <li key={index} onClick={handleClickCloseMenu}>
+                  <a href={menuItem.href}>{menuItem.text}</a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </nav>
     </div>
   );

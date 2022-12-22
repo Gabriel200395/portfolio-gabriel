@@ -1,5 +1,5 @@
 import "./styles.css";
-import user from "../../assets/icon.png";
+import user from "../../assets/img/icon.png";
 
 const About = () => {
   return (

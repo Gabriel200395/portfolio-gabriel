@@ -1,4 +1,4 @@
-import nootbook from "../../assets/nootebook.png";
+import nootbook from "../../assets/img/nootebook.png";
 import "./styles.css";
 
 const InitialUser = () => {
