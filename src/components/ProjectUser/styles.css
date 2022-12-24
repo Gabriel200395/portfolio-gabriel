@@ -31,12 +31,33 @@
   align-items: center;
   box-shadow: 2px 2px 2px 2px;
 }
+ 
+.project-c .project-grid-container .card .header {
+  height: 100px;
+  width: 200px; 
+  background-color: red; 
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  
+}
 
 .project-c .project-grid-container .card h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 600;
   color: #d1d1d1;
+}
+
+.project-c .project-grid-container .card .card-header {
+  height: 80px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+} 
+
+.project-c .project-grid-container .card .card-text {
+  height: 80px; 
   margin-bottom: 20px;
 }
 

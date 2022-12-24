@@ -35,8 +35,12 @@ const ProjectUser = () => {
               (project, index) => {
                 return (
                   <div className="card" key={index}>
-                    <h3>{project.titulo}</h3>
-                    <p>{project.text}</p>
+                    <div className="card-header">
+                      <h3>{project.titulo}</h3>
+                    </div>
+                    <div className="card-text">
+                      <p>{project.text}</p>
+                    </div>
 
                     {project.link && (
                       <a href={project.link} target="_blank">
