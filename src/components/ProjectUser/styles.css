@@ -19,8 +19,7 @@
   grid-auto-rows: 300px;
   max-width: 1000px;
   width: 100%;
-  grid-gap: 15px;
-  margin-bottom: 20px;
+  grid-gap: 25px 25px; 
 }
 
 .project-c .project-grid-container .card {
