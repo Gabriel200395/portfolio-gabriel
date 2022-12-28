@@ -4,7 +4,6 @@ import InitialUser from "../components/InitialUser";
 import About from "../components/About";
 import Experience from "../components/Experience";
 import ProjectUser from "../components/ProjectUser";
-import ServicesUser from "../components/ServicesUser";
 import Knowledge from "../components/Knowledge";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";

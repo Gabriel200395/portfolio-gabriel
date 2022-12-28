@@ -3,12 +3,12 @@ import "./styles.css";
 import { projectsCard } from "../../helpers/obj";
 
 const ProjectUser = () => {
-  const [eventClickProject, setEventClickProject] = useState(1);
+  const [eventClickProject, setEventClickProject] = useState(2);
 
   const scrollBody = (topScroll: number) =>
     window.scroll({ top: topScroll, left: 0, behavior: "smooth" });
 
-  const handleClickProjectPrev = () => {
+/*   const handleClickProjectPrev = () => {
     setEventClickProject((c) => c - 1);
 
     if (window.screen.width <= 1200) {
@@ -23,7 +23,7 @@ const ProjectUser = () => {
       return scrollBody(3050);
     }
     scrollBody(2050);
-  };
+  }; */
 
   return (
     <div className="project-c" id="projetos">
@@ -53,7 +53,7 @@ const ProjectUser = () => {
             )}
           </div>
 
-          <button
+        {/*   <button
             className="button-view-more"
             onClick={
               eventClickProject >= 2
@@ -63,7 +63,7 @@ const ProjectUser = () => {
             disabled={projectsCard["page" + eventClickProject] ? false : true}
           >
             {eventClickProject === 1 ? "Ver Mais" : "Voltar"}
-          </button>
+          </button> */}
         </>
       </div>
     </div>
