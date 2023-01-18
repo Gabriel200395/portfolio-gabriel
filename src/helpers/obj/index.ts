@@ -52,13 +52,13 @@ export const projectsCard: instanceProjects = {
     arrProjects: [
       {
         titulo: "Todo List",
-        text: "Todo List Desenvolvido com React JS, React Hooks, Typescript, React Testing Lybrary.",
+        text: "Todo List Desenvolvido com React JS, React Hooks, Typescript, React Testing Library.",
         buttonText: "Vizualizar Projeto",
         link: "https://github.com/Gabriel200395/reactJS_small_projects/tree/main/projetos/todo-list",
       },
       {
         titulo: "Pokedex",
-        text: "Pokedex Desenvolvido com React JS, React Hooks, Typescript, React Testing Lybrary, Css-Flexbox.",
+        text: "Pokedex Desenvolvido com React JS, React Hooks, Typescript, React Testing Library, Css-Flexbox.",
         buttonText: "Vizualizar Projeto",
         link: "https://github.com/Gabriel200395/pokedex",
       },
@@ -74,13 +74,13 @@ export const projectsCard: instanceProjects = {
     arrProjects: [
       {
         titulo: "Todo List",
-        text: "Todo List Desenvolvido com React JS, React Hooks, Typescript, React Testing Lybrary.",
+        text: "Todo List Desenvolvido com React JS, React Hooks, Typescript, React Testing Library.",
         buttonText: "Vizualizar Projeto",
         link: "https://github.com/Gabriel200395/reactJS_small_projects/tree/main/projetos/todo-list",
       },
       {
         titulo: "Pokedex",
-        text: "Pokedex Desenvolvido com React JS, React Hooks, Typescript, React Testing Lybrary, Css-Flexbox.",
+        text: "Pokedex Desenvolvido com React JS, React Hooks, Typescript, React Testing Library, Css-Flexbox.",
         buttonText: "Vizualizar Projeto",
         link: "https://github.com/Gabriel200395/pokedex",
       },
@@ -92,7 +92,7 @@ export const projectsCard: instanceProjects = {
       },
       {
         titulo: "Lotter Games",
-        text: "Lotter Games Desenvolvido com React JS, React Hooks, Typescript, React Testing Lybrary, Css-Flexbox, Css-Grid-Layout",
+        text: "Lotter Games Desenvolvido com React JS, React Hooks, Typescript, React Testing Library, Css-Flexbox, Css-Grid-Layout",
         buttonText: "Vizualizar Projeto",
         link: "https://github.com/Gabriel200395/lotter-games",
       },

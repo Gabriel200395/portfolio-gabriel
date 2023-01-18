@@ -72,7 +72,7 @@ export const skills: instanceSkill[] = [
     value: 50,
   },
   {
-    name: "React-Testing-Lybrary",
+    name: "React-Testing-Library",
     value: 70,
   },
 ];
